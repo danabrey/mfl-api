@@ -118,6 +118,10 @@ final class MFLApiClient
             'DETAILS' => '1',
         ]);
 
-        var_dump($response);
+        $normalizers = [new ArrayDenormalizer(), new ObjectNormalizer()];
+        $serializer = new Serializer($normalizers);
+        $players = $serializer->denormalize($response['player'], MFLPlayer::class . '[]');
+
+        return $players;
     }
 }
