@@ -32,7 +32,7 @@ final class MFLApiClient
     protected function getApiBase(): string
     {
         return sprintf(
-            "http://api.myfantasyleague.com/%s/export",
+            "https://api.myfantasyleague.com/%s/export",
             $this->year,
         );
     }
@@ -114,13 +114,13 @@ final class MFLApiClient
     public function players(): array
     {
         $response = $this->get([
-            'TYPE' => 'PLAYERS',
+            'TYPE' => 'players',
             'DETAILS' => '1',
         ]);
 
         $normalizers = [new ArrayDenormalizer(), new ObjectNormalizer()];
         $serializer = new Serializer($normalizers);
-        $players = $serializer->denormalize($response['player'], MFLPlayer::class . '[]');
+        $players = $serializer->denormalize($response['players']['player'], MFLPlayer::class . '[]');
 
         return $players;
     }
