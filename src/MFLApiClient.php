@@ -2,10 +2,13 @@
 namespace DanAbrey\MFLApi;
 
 use DanAbrey\MFLApi\Denormalizers\MFLLeagueDenormalizer;
+use DanAbrey\MFLApi\Denormalizers\MFLRosterDenormalizer;
 use DanAbrey\MFLApi\Exceptions\InvalidParametersException;
 use DanAbrey\MFLApi\Exceptions\UnknownApiError;
+use DanAbrey\MFLApi\Models\MFLFranchise;
 use DanAbrey\MFLApi\Models\MFLLeague;
 use DanAbrey\MFLApi\Models\MFLPlayer;
+use DanAbrey\MFLApi\Models\MFLRoster;
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Component\Serializer\Normalizer\ArrayDenormalizer;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
@@ -123,5 +126,25 @@ final class MFLApiClient
         $players = $serializer->denormalize($response['players']['player'], MFLPlayer::class . '[]');
 
         return $players;
+    }
+
+    /**
+     * @param string $leagueId
+     * @return array|MFLRoster[]
+     * @throws InvalidParametersException
+     * @throws UnknownApiError
+     */
+    public function rosters(string $leagueId): array
+    {
+        $response = $this->get([
+            'TYPE' => 'rosters',
+            'L' => $leagueId,
+        ]);
+
+        $normalizers = [new ArrayDenormalizer(), new MFLRosterDenormalizer()];
+        $serializer = new Serializer($normalizers);
+        $rosters = $serializer->denormalize($response['rosters']['franchise'], MFLRoster::class . '[]');
+
+        return $rosters;
     }
 }
