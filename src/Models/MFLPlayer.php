@@ -5,4 +5,5 @@ final class MFLPlayer
 {
     public string $id;
     public string $name;
+    public ?string $position;
 }

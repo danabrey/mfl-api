@@ -1,0 +1,195 @@
+{
+  "version": "1.0",
+  "league": {
+    "playerLimitUnit": "LEAGUE",
+    "taxiSquad": "",
+    "endWeek": "16",
+    "draft_kind": "email",
+    "lockout": "No",
+    "nflPoolStartWeek": "1",
+    "franchises": {
+      "count": "12",
+      "franchise": [
+        {
+          "email": "redacted",
+          "name": "redacted",
+          "id": "0001",
+          "waiverSortOrder": "12",
+          "owner_name": "redacted",
+          "username": "redacted",
+          "lastVisit": "1589835344"
+        },
+        {
+          "email": "redacted",
+          "name": "redacted",
+          "id": "0002",
+          "waiverSortOrder": "11",
+          "owner_name": "redacted",
+          "username": "redacted",
+          "lastVisit": "1593252376"
+        },
+        {
+          "country": "US",
+          "icon": "https://www68.myfantasyleague.com/fflnetdynamic2020/11747_franchise_icon0003.jpg",
+          "abbrev": "DC",
+          "name": "Dutch Caps",
+          "waiverSortOrder": "10",
+          "username": "redacted",
+          "lastVisit": "1593408112",
+          "email": "redacted",
+          "time_zone": "GMT",
+          "id": "0003",
+          "play_audio": "Yes",
+          "use_advanced_editor": "Yes",
+          "owner_name": "redacted",
+          "mail_event": "DRAFT,ONTHECLOCK,"
+        },
+        {
+          "email": "redacted",
+          "name": "redacted",
+          "id": "0004",
+          "waiverSortOrder": "9",
+          "owner_name": "redacted",
+          "username": "redacted",
+          "lastVisit": "1589988724"
+        },
+        {
+          "email": "redacted",
+          "name": "redacted",
+          "id": "0005",
+          "waiverSortOrder": "8",
+          "owner_name": "redacted",
+          "username": "redacted",
+          "lastVisit": "1593353246"
+        },
+        {
+          "country": "US",
+          "name": "redacted",
+          "waiverSortOrder": "7",
+          "username": "redacted",
+          "lastVisit": "1590172954",
+          "email": "redacted",
+          "id": "0006",
+          "owner_name": "redacted",
+          "mail_event": "DRAFT,IR,LINEUP,ONTHECLOCK,RESULT,TAXI,TBAIT,TRADE,WAIVER,"
+        },
+        {
+          "email": "redacted",
+          "name": "redacted",
+          "id": "0007",
+          "waiverSortOrder": "6",
+          "owner_name": "redacted",
+          "username": "redacted",
+          "lastVisit": "1593185609"
+        },
+        {
+          "icon": "https://i.imgur.com/bANPLXj.png",
+          "name": "redacted",
+          "waiverSortOrder": "5",
+          "username": "redacted",
+          "lastVisit": "1591344890",
+          "email": "redacted",
+          "time_zone": "ET",
+          "id": "0008",
+          "play_audio": "Yes",
+          "use_advanced_editor": "Yes",
+          "owner_name": "redacted"
+        },
+        {
+          "email": "redacted",
+          "name": "redacted",
+          "id": "0009",
+          "waiverSortOrder": "4",
+          "owner_name": "redacted",
+          "username": "redacted",
+          "lastVisit": "1592667398"
+        },
+        {
+          "email": "redacted",
+          "name": "redacted",
+          "id": "0010",
+          "waiverSortOrder": "3",
+          "owner_name": "redacted",
+          "username": "redacted",
+          "lastVisit": "1589908751"
+        },
+        {
+          "email": "redacted",
+          "name": "redacted",
+          "id": "0011",
+          "waiverSortOrder": "2",
+          "owner_name": "redacted",
+          "username": "redacted",
+          "lastVisit": "1591392029"
+        },
+        {
+          "email": "redacted",
+          "name": "redacted",
+          "id": "0012",
+          "waiverSortOrder": "1",
+          "owner_name": "redacted",
+          "username": "redacted",
+          "lastVisit": "1593421245"
+        }
+      ]
+    },
+    "standingsSort": "PTS",
+    "draftPlayerPool": "Both",
+    "id": "11747",
+    "nflPoolType": "",
+    "history": {
+      "league": {
+        "url": "https://www68.myfantasyleague.com/2020/home/11747",
+        "year": "2020"
+      }
+    },
+    "rosterSize": "20",
+    "name": "TheFanPub Best Ball II: 1QB, PPR",
+    "draftTimer": "ONS",
+    "fantasyPoolType": "",
+    "mobileAlerts": "",
+    "draftLimitHours": "10:00",
+    "starters": {
+      "count": "8",
+      "position": [
+        {
+          "name": "QB",
+          "limit": "1"
+        },
+        {
+          "name": "RB",
+          "limit": "2-3"
+        },
+        {
+          "name": "WR",
+          "limit": "3-4"
+        },
+        {
+          "name": "TE",
+          "limit": "1-2"
+        }
+      ],
+      "idp_starters": ""
+    },
+    "fantasyPoolEndWeek": "16",
+    "nflPoolEndWeek": "16",
+    "bestLineup": "Yes",
+    "precision": "2",
+    "lastRegularSeasonWeek": "1",
+    "survivorPool": "Yes",
+    "draftTimerSusp": "17 01",
+    "usesContractYear": "0",
+    "injuredReserve": "",
+    "startWeek": "1",
+    "commish_username": "redacted",
+    "survivorPoolStartWeek": "1",
+    "fantasyPoolStartWeek": "1",
+    "survivorPoolEndWeek": "16",
+    "rostersPerPlayer": "1",
+    "h2h": "",
+    "usesSalaries": "0",
+    "baseURL": "https://www68.myfantasyleague.com",
+    "loadRosters": "email_draft"
+  },
+  "encoding": "utf-8"
+}

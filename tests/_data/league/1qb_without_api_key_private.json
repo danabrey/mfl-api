@@ -1,0 +1,7 @@
+{
+  "version": "1.0",
+  "error": {
+    "$t": "API requires logged in user in league ID 11747 - Please be sure to pass the proper MFL_USER_ID cookie or APIKEY parameter"
+  },
+  "encoding": "utf-8"
+}

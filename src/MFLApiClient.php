@@ -2,10 +2,9 @@
 namespace DanAbrey\MFLApi;
 
 use DanAbrey\MFLApi\Denormalizers\MFLLeagueDenormalizer;
-use DanAbrey\MFLApi\Denormalizers\MFLRosterDenormalizer;
 use DanAbrey\MFLApi\Exceptions\InvalidParametersException;
+use DanAbrey\MFLApi\Exceptions\UnauthorizedException;
 use DanAbrey\MFLApi\Exceptions\UnknownApiError;
-use DanAbrey\MFLApi\Models\MFLFranchise;
 use DanAbrey\MFLApi\Models\MFLLeague;
 use DanAbrey\MFLApi\Models\MFLPlayer;
 use DanAbrey\MFLApi\Models\MFLRoster;
@@ -13,15 +12,14 @@ use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Component\Serializer\Normalizer\ArrayDenormalizer;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 use Symfony\Component\Serializer\Serializer;
-use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
-use Symfony\Contracts\HttpClient\Exception\ServerExceptionInterface;
-use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
+use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 final class MFLApiClient
 {
     private string $year;
     private ?string $apiKey;
     private Serializer $serializer;
+    private ResponseParser $responseParser;
 
     public function __construct(int $year, string $apiKey = null)
     {
@@ -30,6 +28,7 @@ final class MFLApiClient
 
         $normalizers = [new ArrayDenormalizer(), new ObjectNormalizer()];
         $this->serializer = new Serializer($normalizers);
+        $this->responseParser = new ResponseParser();
     }
 
     protected function getApiBase(): string
@@ -51,64 +50,28 @@ final class MFLApiClient
         return http_build_query($arguments);
     }
 
-    /**
-     * @param array $arguments
-     * @return mixed
-     * @throws InvalidParametersException
-     * @throws UnknownApiError
-     */
-    protected function get(array $arguments = [])
+    protected function getClient(): HttpClientInterface
     {
-        $url = sprintf(
+        return HttpClient::create();
+    }
+
+    protected function getUrl(array $arguments = []): string
+    {
+        return sprintf(
             "%s?%s",
             $this->getApiBase(),
             $this->getArgumentsForUrl($arguments),
         );
-
-        $client = HttpClient::create();
-
-        try {
-            $response = $client->request('GET', $url);
-            $decodedResponse = json_decode($response->getContent(), true);
-
-            if (isset($decodedResponse['error'])) {
-                switch ($decodedResponse['error']) {
-                    case "An error has occurred - probably caused by one or more invalid parameters.":
-                        throw new InvalidParametersException();
-                }
-            }
-        } catch (ClientExceptionInterface $e) {
-            // Probably a 404, MFL sometimes responds with this when it can't find the league ID
-            throw new InvalidParametersException();
-        } catch (TransportExceptionInterface | ServerExceptionInterface $e) {
-            throw new UnknownApiError();
-        }
-
-        return $decodedResponse;
-    }
-
-    protected function post()
-    {
-
-    }
-
-    protected function request(string $path, array $arguments)
-    {
-
     }
 
     public function league(string $leagueId): MFLLeague
     {
-        $response = $this->get([
+        $arguments = $this->get([
             'TYPE' => 'league',
             'L' => $leagueId,
         ]);
 
-        $normalizers = [new ArrayDenormalizer(), new MFLLeagueDenormalizer()];
-        $serializer = new Serializer($normalizers);
-        $league = $serializer->denormalize($response['league'], MFLLeague::class);
-
-        return $league;
+        return $this->responseParser->league($this->getClient(), $this->getUrl($arguments));
     }
 
     /**
@@ -116,16 +79,12 @@ final class MFLApiClient
      */
     public function players(): array
     {
-        $response = $this->get([
+        $arguments = $this->get([
             'TYPE' => 'players',
             'DETAILS' => '1',
         ]);
 
-        $normalizers = [new ArrayDenormalizer(), new ObjectNormalizer()];
-        $serializer = new Serializer($normalizers);
-        $players = $serializer->denormalize($response['players']['player'], MFLPlayer::class . '[]');
-
-        return $players;
+        return $this->responseParser->players($this->getClient(), $this->getUrl($arguments));
     }
 
     /**
@@ -136,15 +95,12 @@ final class MFLApiClient
      */
     public function rosters(string $leagueId): array
     {
-        $response = $this->get([
+        $arguments = $this->get([
             'TYPE' => 'rosters',
             'L' => $leagueId,
         ]);
 
-        $normalizers = [new ArrayDenormalizer(), new MFLRosterDenormalizer()];
-        $serializer = new Serializer($normalizers);
-        $rosters = $serializer->denormalize($response['rosters']['franchise'], MFLRoster::class . '[]');
-
-        return $rosters;
+        $rostersResponseParser = new ResponseParser();
+        return $rostersResponseParser->rosters($this->getClient(), $this->getUrl($arguments));
     }
 }
