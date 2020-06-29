@@ -1,7 +1,7 @@
 <?php
 namespace DanAbrey\MFLApi\Exceptions;
 
-class MFLApiException extends \Exception
+abstract class MFLApiException extends \Exception
 {
 
 }
