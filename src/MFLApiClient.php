@@ -66,10 +66,10 @@ final class MFLApiClient
 
     public function league(string $leagueId): MFLLeague
     {
-        $arguments = $this->get([
+        $arguments = [
             'TYPE' => 'league',
             'L' => $leagueId,
-        ]);
+        ];
 
         return $this->responseParser->league($this->getClient(), $this->getUrl($arguments));
     }
@@ -79,10 +79,10 @@ final class MFLApiClient
      */
     public function players(): array
     {
-        $arguments = $this->get([
+        $arguments = [
             'TYPE' => 'players',
             'DETAILS' => '1',
-        ]);
+        ];
 
         return $this->responseParser->players($this->getClient(), $this->getUrl($arguments));
     }
@@ -95,10 +95,10 @@ final class MFLApiClient
      */
     public function rosters(string $leagueId): array
     {
-        $arguments = $this->get([
+        $arguments = [
             'TYPE' => 'rosters',
             'L' => $leagueId,
-        ]);
+        ];
 
         $rostersResponseParser = new ResponseParser();
         return $rostersResponseParser->rosters($this->getClient(), $this->getUrl($arguments));
