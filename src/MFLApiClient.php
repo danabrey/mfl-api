@@ -100,7 +100,6 @@ final class MFLApiClient
             'L' => $leagueId,
         ];
 
-        $rostersResponseParser = new ResponseParser();
-        return $rostersResponseParser->rosters($this->getClient(), $this->getUrl($arguments));
+        return $this->responseParser->rosters($this->getClient(), $this->getUrl($arguments));
     }
 }
