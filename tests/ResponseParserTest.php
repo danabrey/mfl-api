@@ -26,6 +26,11 @@ class ResponseParserTest extends TestCase
         $this->assertInstanceOf(MFLLeague::class, $league);
         $this->assertEquals('11747', $league->id);
         $this->assertEquals('TheFanPub Best Ball II: 1QB, PPR', $league->name);
+        $this->assertEquals(20, $league->rosterSize);
+        $this->assertEquals(0, $league->taxiSquad);
+        $this->assertFalse($league->usesSalaries);
+        $this->assertFalse($league->usesContractYear);
+        $this->assertNull($league->salaryCapAmount);
     }
 
     public function testUnauthorizedLeague()
