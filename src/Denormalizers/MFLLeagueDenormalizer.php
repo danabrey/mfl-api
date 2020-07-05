@@ -17,7 +17,7 @@ class MFLLeagueDenormalizer implements DenormalizerInterface
         $league->id = $data['id'];
         $league->name = $data['name'];
         $league->rosterSize = $data['rosterSize'];
-        $league->taxiSquad = $data['taxiSquad'];
+        $league->taxiSquad = intval($data['taxiSquad']);
         $league->usesContractYear = $data['usesContractYear'];
         $league->usesSalaries = $data['usesSalaries'];
         $league->salaryCapAmount = $data['salaryCapAmount'] ?? null;
