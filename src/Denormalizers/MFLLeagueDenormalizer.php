@@ -6,7 +6,6 @@ use DanAbrey\MFLApi\Models\MFLFranchise;
 use DanAbrey\MFLApi\Models\MFLLeague;
 use Symfony\Component\Serializer\Normalizer\ArrayDenormalizer;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
-use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 use Symfony\Component\Serializer\Serializer;
 
 class MFLLeagueDenormalizer implements DenormalizerInterface
@@ -21,6 +20,7 @@ class MFLLeagueDenormalizer implements DenormalizerInterface
         $league->usesContractYear = $data['usesContractYear'];
         $league->usesSalaries = $data['usesSalaries'];
         $league->salaryCapAmount = $data['salaryCapAmount'] ?? null;
+        $league->starters = $data['starters'];
 
         $franchiseDenormalizer = new Serializer([new MFLFranchiseDenormalizer(), new ArrayDenormalizer()]);
 

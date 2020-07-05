@@ -31,6 +31,8 @@ class ResponseParserTest extends TestCase
         $this->assertFalse($league->usesSalaries);
         $this->assertFalse($league->usesContractYear);
         $this->assertNull($league->salaryCapAmount);
+        $this->assertCount(4, $league->starters['position']);
+        $this->assertEquals(8, $league->starters['count']);
     }
 
     public function testUnauthorizedLeague()
