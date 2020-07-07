@@ -21,12 +21,22 @@ class MFLRosterDenormalizer implements DenormalizerInterface
 
         $rosterPlayerDenormalizer = new Serializer([new ObjectNormalizer(), new ArrayDenormalizer()]);
 
-        $rosterPlayers = isset($data['player']) ? $rosterPlayerDenormalizer->denormalize(
-            $data['player'],
-            MFLRosterPlayer::class . "[]",
-            $format,
-            $context
-        ) : [];
+        $rosterPlayers = [];
+
+        if(isset($data['player'])) {
+            // If only one player, the MFL API returns that single player as the value, rather than an array of 1
+            if (isset($data['player']) && isset($data['player']['id'])) {
+                $data['player'] = [$data['player']];
+            }
+
+            $rosterPlayers = $rosterPlayerDenormalizer->denormalize(
+                $data['player'],
+                MFLRosterPlayer::class . "[]",
+                $format,
+                $context
+            );
+        }
+
         $roster->players = $rosterPlayers;
 
         return $roster;
