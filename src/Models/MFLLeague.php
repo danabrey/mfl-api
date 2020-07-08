@@ -14,7 +14,7 @@ final class MFLLeague
 
     public bool $usesContractYear = false;
     public bool $usesSalaries = false;
-    public ?string $salaryCapAmount;
+    public ?string $salaryCapAmount = null;
 
     public array $starters;
 }
