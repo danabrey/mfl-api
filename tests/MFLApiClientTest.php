@@ -1,18 +1,20 @@
 <?php
 
+use DanAbrey\MFLApi\Exceptions\UnauthorizedException;
+use DanAbrey\MFLApi\MFLApiClient;
 use DanAbrey\MFLApi\Models\MFLLeague;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;
 
-class ResponseParserTest extends TestCase
+class MFLApiClientTest extends TestCase
 {
-    private \DanAbrey\MFLApi\ResponseParser $responseParser;
+    private MFLApiClient $client;
 
     public function __construct(?string $name = null, array $data = [], $dataName = '')
     {
         parent::__construct($name, $data, $dataName);
-        $this->responseParser = new \DanAbrey\MFLApi\ResponseParser();
+        $this->client = new DanAbrey\MFLApi\MFLApiClient('2020');
     }
 
     public function testLeague()
@@ -22,7 +24,8 @@ class ResponseParserTest extends TestCase
             new MockResponse($data),
         ];
         $client = new MockHttpClient($responses);
-        $league = $this->responseParser->league($client, 'https://api.myfantasyleague.com/2020/export?TYPE=league&L=xxxxx&APIKEY=&JSON=1');
+        $this->client->setHttpClient($client);
+        $league = $this->client->league('xxxxx');
         $this->assertInstanceOf(MFLLeague::class, $league);
         $this->assertEquals('11747', $league->id);
         $this->assertEquals('TheFanPub Best Ball II: 1QB, PPR', $league->name);
@@ -42,8 +45,9 @@ class ResponseParserTest extends TestCase
             new MockResponse($data),
         ];
         $client = new MockHttpClient($responses);
-        $this->expectException(\DanAbrey\MFLApi\Exceptions\UnauthorizedException::class);
-        $league = $this->responseParser->league($client, 'https://api.myfantasyleague.com/2020/export?TYPE=league&L=xxxxx&APIKEY=&JSON=1');
+        $this->client->setHttpClient($client);
+        $this->expectException(UnauthorizedException::class);
+        $league = $this->client->league( 'xxxxx');
     }
 
     public function testRosters()
@@ -53,7 +57,8 @@ class ResponseParserTest extends TestCase
             new MockResponse($data),
         ];
         $client = new MockHttpClient($responses);
-        $rosters = $this->responseParser->rosters($client, 'https://api.myfantasyleague.com/2020/export?TYPE=rosters&L=xxxxx&APIKEY=&JSON=1');
+        $this->client->setHttpClient($client);
+        $rosters = $this->client->rosters( 'xxxxx');
         $this->assertIsArray($rosters);
         $this->assertEquals('0001', $rosters[0]->id);
         $this->assertEquals('13132', $rosters[0]->players[0]->id);
@@ -66,7 +71,8 @@ class ResponseParserTest extends TestCase
             new MockResponse($data),
         ];
         $client = new MockHttpClient($responses);
-        $players = $this->responseParser->players($client, 'https://api.myfantasyleague.com/2020/export?TYPE=players&DETAILS=1&JSON=1');
+        $this->client->setHttpClient($client);
+        $players = $this->client->players();
         $this->assertIsArray($players);
         $this->assertEquals('12360', $players[0]->id);
         $this->assertEquals('DE', $players[0]->position);
