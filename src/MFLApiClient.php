@@ -75,7 +75,7 @@ final class MFLApiClient
     protected function makeRequest(string $method, string $url): array
     {
         try {
-            $response = $this->httpClient->request($method, $url);
+            $response = $this->getClient()->request($method, $url);
             $decodedResponse = json_decode($response->getContent(), true);
 
             if (isset($decodedResponse['error'])) {
