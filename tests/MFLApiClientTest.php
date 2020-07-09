@@ -64,6 +64,24 @@ class MFLApiClientTest extends TestCase
         $this->assertEquals('13132', $rosters[0]->players[0]->id);
     }
 
+
+    public function testRostersWithContracts()
+    {
+        $data = file_get_contents(__DIR__ . '/_data/rosters/rosters-with-contracts.json');
+        $responses = [
+            new MockResponse($data),
+        ];
+        $client = new MockHttpClient($responses);
+        $this->client->setHttpClient($client);
+        $rosters = $this->client->rosters( 'xxxxx');
+        $this->assertIsArray($rosters);
+        $this->assertEquals('0001', $rosters[0]->id);
+        $this->assertEquals('13128', $rosters[0]->players[0]->id);
+        $this->assertEquals(8167951, $rosters[0]->players[0]->salary);
+        $this->assertEquals(4, $rosters[0]->players[0]->contractYear);
+        $this->assertNull($rosters[0]->players[0]->contractInfo);
+    }
+
     public function testPlayers()
     {
         $data = file_get_contents(__DIR__ . '/_data/players/players.json');
