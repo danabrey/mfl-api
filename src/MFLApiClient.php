@@ -24,7 +24,6 @@ final class MFLApiClient
     private HttpClientInterface $httpClient;
     private string $year;
     private ?string $apiKey;
-    private ?string $userAgent;
 
     private Serializer $serializer;
 
@@ -35,7 +34,14 @@ final class MFLApiClient
 
         $normalizers = [new ArrayDenormalizer(), new ObjectNormalizer()];
         $this->serializer = new Serializer($normalizers);
-        $this->userAgent = $userAgent;
+
+        $options = $userAgent ? [
+            'headers' => [
+                'User-Agent' => $userAgent,
+            ]
+        ] : [];
+
+        $this->httpClient = HttpClient::create($options);
     }
 
     protected function getApiBase(): string
@@ -64,17 +70,7 @@ final class MFLApiClient
 
     protected function getClient(): HttpClientInterface
     {
-        if ($this->httpClient) {
-            return $this->httpClient;
-        }
-
-        $options = $this->userAgent ? [
-            'headers' => [
-                'User-Agent' => $this->userAgent,
-            ]
-        ] : [];
-
-        return HttpClient::create($options);
+        return $this->httpClient;
     }
 
     protected function getUrl(array $arguments = []): string
