@@ -1,4 +1,5 @@
 <?php
+
 namespace DanAbrey\MFLApi;
 
 use DanAbrey\MFLApi\Denormalizers\MFLLeagueDenormalizer;
@@ -23,15 +24,18 @@ final class MFLApiClient
     private HttpClientInterface $httpClient;
     private string $year;
     private ?string $apiKey;
+    private ?string $userAgent;
+
     private Serializer $serializer;
 
-    public function __construct(int $year, string $apiKey = null)
+    public function __construct(int $year, string $apiKey = null, string $userAgent = null)
     {
         $this->year = $year;
         $this->apiKey = $apiKey;
 
         $normalizers = [new ArrayDenormalizer(), new ObjectNormalizer()];
         $this->serializer = new Serializer($normalizers);
+        $this->userAgent = $userAgent;
     }
 
     protected function getApiBase(): string
@@ -46,9 +50,9 @@ final class MFLApiClient
     {
 
         $arguments = [
-            'JSON' => '1',
-            'APIKEY' => $this->apiKey,
-        ] + $arguments;
+                'JSON' => '1',
+                'APIKEY' => $this->apiKey,
+            ] + $arguments;
 
         return http_build_query($arguments);
     }
@@ -60,7 +64,17 @@ final class MFLApiClient
 
     protected function getClient(): HttpClientInterface
     {
-        return $this->client ?? HttpClient::create();
+        if ($this->httpClient) {
+            return $this->httpClient;
+        }
+
+        $options = $this->userAgent ? [
+            'headers' => [
+                'User-Agent' => $this->userAgent,
+            ]
+        ] : [];
+
+        return HttpClient::create($options);
     }
 
     protected function getUrl(array $arguments = []): string
@@ -111,7 +125,7 @@ final class MFLApiClient
             'L' => $leagueId,
         ];
 
-        $response = $this->makeRequest( 'GET', $this->getUrl($arguments));
+        $response = $this->makeRequest('GET', $this->getUrl($arguments));
 
         $normalizers = [new ArrayDenormalizer(), new MFLLeagueDenormalizer()];
         $serializer = new Serializer($normalizers);
@@ -152,7 +166,7 @@ final class MFLApiClient
             'L' => $leagueId,
         ];
 
-        $response = $this->makeRequest( 'GET', $this->getUrl($arguments));
+        $response = $this->makeRequest('GET', $this->getUrl($arguments));
 
         $normalizers = [new ArrayDenormalizer(), new MFLRosterDenormalizer()];
         $serializer = new Serializer($normalizers);
