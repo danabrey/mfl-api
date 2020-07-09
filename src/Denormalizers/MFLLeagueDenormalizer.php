@@ -20,7 +20,9 @@ class MFLLeagueDenormalizer implements DenormalizerInterface
         $league->taxiSquad = intval($data['taxiSquad']);
         $league->usesContractYear = $data['usesContractYear'];
         $league->usesSalaries = $data['usesSalaries'];
-        $league->salaryCapAmount = $data['salaryCapAmount'] ?? null;
+        if (isset($data['salaryCapAmount']) && $data['salaryCapAmount'] !== '') {
+            $league->salaryCapAmount = $data['salaryCapAmount'];
+        }
         $league->starters = $data['starters'];
 
         $franchiseDenormalizer = new Serializer([new MFLFranchiseDenormalizer(), new ArrayDenormalizer()]);
