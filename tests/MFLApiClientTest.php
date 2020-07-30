@@ -2,6 +2,7 @@
 
 use DanAbrey\MFLApi\Exceptions\UnauthorizedException;
 use DanAbrey\MFLApi\MFLApiClient;
+use DanAbrey\MFLApi\Models\MFLDraftPick;
 use DanAbrey\MFLApi\Models\MFLLeague;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpClient\MockHttpClient;
@@ -94,5 +95,18 @@ class MFLApiClientTest extends TestCase
         $this->assertIsArray($players);
         $this->assertEquals('12360', $players[0]->id);
         $this->assertEquals('DE', $players[0]->position);
+    }
+
+    public function testDraftResults()
+    {
+        $data = file_get_contents(__DIR__ . '/_data/draftResults/draftResults.json');
+        $responses = [
+            new MockResponse($data),
+        ];
+        $client = new MockHttpClient($responses);
+        $this->client->setHttpClient($client);
+        $draftResults = $this->client->draftResults('12345');
+        $this->assertIsArray($draftResults);
+        $this->assertInstanceOf(MFLDraftPick::class, $draftResults[0]);
     }
 }

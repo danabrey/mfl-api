@@ -2,11 +2,13 @@
 
 namespace DanAbrey\MFLApi;
 
+use DanAbrey\MFLApi\Denormalizers\MFLDraftPickDenormalizer;
 use DanAbrey\MFLApi\Denormalizers\MFLLeagueDenormalizer;
 use DanAbrey\MFLApi\Denormalizers\MFLRosterDenormalizer;
 use DanAbrey\MFLApi\Exceptions\InvalidParametersException;
 use DanAbrey\MFLApi\Exceptions\UnauthorizedException;
 use DanAbrey\MFLApi\Exceptions\UnknownApiError;
+use DanAbrey\MFLApi\Models\MFLDraftPick;
 use DanAbrey\MFLApi\Models\MFLLeague;
 use DanAbrey\MFLApi\Models\MFLPlayer;
 use DanAbrey\MFLApi\Models\MFLRoster;
@@ -167,5 +169,18 @@ final class MFLApiClient
         $normalizers = [new ArrayDenormalizer(), new MFLRosterDenormalizer()];
         $serializer = new Serializer($normalizers);
         return $serializer->denormalize($response['rosters']['franchise'], MFLRoster::class . '[]');
+    }
+
+    public function draftResults(string $leagueId): array
+    {
+        $arguments = [
+            'TYPE' => 'draftResults',
+            'L' => $leagueId
+        ];
+
+        $response = $this->makeRequest('GET', $this->getUrl($arguments));
+        $normalizers = [new ArrayDenormalizer(), new MFLDraftPickDenormalizer()];
+        $serializer = new Serializer($normalizers);
+        return $serializer->denormalize($response['draftResults']['draftUnit']['draftPick'], MFLDraftPick::class . '[]');
     }
 }

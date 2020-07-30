@@ -1,0 +1,398 @@
+{
+    "draftResults": {
+        "draftUnit": {
+            "unit": "LEAGUE",
+            "draftType": "SDRAFT",
+            "draftPick": [
+                {
+                    "timestamp": "1589386248",
+                    "franchise": "0012",
+                    "round": "01",
+                    "player": "14803",
+                    "pick": "01",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589387943",
+                    "franchise": "0008",
+                    "round": "01",
+                    "player": "14802",
+                    "pick": "02",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589388875",
+                    "franchise": "0003",
+                    "round": "01",
+                    "player": "14777",
+                    "pick": "03",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589389719",
+                    "franchise": "0002",
+                    "round": "01",
+                    "player": "14800",
+                    "pick": "04",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589389962",
+                    "franchise": "0009",
+                    "round": "01",
+                    "player": "14778",
+                    "pick": "05",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589390690",
+                    "franchise": "0011",
+                    "round": "01",
+                    "player": "14797",
+                    "pick": "06",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589398199",
+                    "franchise": "0005",
+                    "round": "01",
+                    "player": "14799",
+                    "pick": "07",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589399605",
+                    "franchise": "0006",
+                    "round": "01",
+                    "player": "14832",
+                    "pick": "08",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589402467",
+                    "franchise": "0010",
+                    "round": "01",
+                    "player": "14833",
+                    "pick": "09",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589405073",
+                    "franchise": "0004",
+                    "round": "01",
+                    "player": "14836",
+                    "pick": "10",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589407489",
+                    "franchise": "0007",
+                    "round": "01",
+                    "player": "14839",
+                    "pick": "11",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589408307",
+                    "franchise": "0006",
+                    "round": "01",
+                    "player": "14810",
+                    "pick": "12",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589408712",
+                    "franchise": "0006",
+                    "round": "02",
+                    "player": "14779",
+                    "pick": "01",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589413866",
+                    "franchise": "0007",
+                    "round": "02",
+                    "player": "14846",
+                    "pick": "02",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589420615",
+                    "franchise": "0004",
+                    "round": "02",
+                    "player": "14834",
+                    "pick": "03",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589453271",
+                    "franchise": "0010",
+                    "round": "02",
+                    "player": "14835",
+                    "pick": "04",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589453271",
+                    "franchise": "0006",
+                    "round": "02",
+                    "player": "14844",
+                    "pick": "05",
+                    "comments": "[Pick made from Pre-Draft List] "
+                },
+                {
+                    "timestamp": "1589495836",
+                    "franchise": "0005",
+                    "round": "02",
+                    "player": "14841",
+                    "pick": "06",
+                    "comments": "[Timer expired: Pick made based on FantasySharks.com Player Ranks\nReplacement pick made by Commissioner.] "
+                },
+                {
+                    "timestamp": "1589474327",
+                    "franchise": "0009",
+                    "round": "02",
+                    "player": "14798",
+                    "pick": "07",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589476952",
+                    "franchise": "0002",
+                    "round": "02",
+                    "player": "14842",
+                    "pick": "08",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589477307",
+                    "franchise": "0011",
+                    "round": "02",
+                    "player": "14805",
+                    "pick": "09",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589479820",
+                    "franchise": "0003",
+                    "round": "02",
+                    "player": "14840",
+                    "pick": "10",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589485550",
+                    "franchise": "0008",
+                    "round": "02",
+                    "player": "14783",
+                    "pick": "11",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589488389",
+                    "franchise": "0012",
+                    "round": "02",
+                    "player": "14838",
+                    "pick": "12",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589490265",
+                    "franchise": "0012",
+                    "round": "03",
+                    "player": "14782",
+                    "pick": "01",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589498250",
+                    "franchise": "0005",
+                    "round": "03",
+                    "player": "14837",
+                    "pick": "02",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589498771",
+                    "franchise": "0005",
+                    "round": "03",
+                    "player": "14870",
+                    "pick": "03",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589500260",
+                    "franchise": "0011",
+                    "round": "03",
+                    "player": "14804",
+                    "pick": "04",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589500922",
+                    "franchise": "0009",
+                    "round": "03",
+                    "player": "14807",
+                    "pick": "05",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589501269",
+                    "franchise": "0011",
+                    "round": "03",
+                    "player": "14852",
+                    "pick": "06",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589501269",
+                    "franchise": "0005",
+                    "round": "03",
+                    "player": "14808",
+                    "pick": "07",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589502170",
+                    "franchise": "0001",
+                    "round": "03",
+                    "player": "14864",
+                    "pick": "08",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589543670",
+                    "franchise": "0010",
+                    "round": "03",
+                    "player": "14843",
+                    "pick": "09",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589546465",
+                    "franchise": "0004",
+                    "round": "03",
+                    "player": "14858",
+                    "pick": "10",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589551672",
+                    "franchise": "0007",
+                    "round": "03",
+                    "player": "14801",
+                    "pick": "11",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589552859",
+                    "franchise": "0001",
+                    "round": "03",
+                    "player": "14847",
+                    "pick": "12",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589554361",
+                    "franchise": "0011",
+                    "round": "04",
+                    "player": "14867",
+                    "pick": "01",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589556282",
+                    "franchise": "0007",
+                    "round": "04",
+                    "player": "14806",
+                    "pick": "02",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589556845",
+                    "franchise": "0004",
+                    "round": "04",
+                    "player": "14863",
+                    "pick": "03",
+                    "comments": ""
+                },
+                {
+                    "timestamp": "1589563404",
+                    "franchise": "0002",
+                    "round": "04",
+                    "player": "14780",
+                    "pick": "04",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589567708",
+                    "franchise": "0002",
+                    "round": "04",
+                    "player": "14850",
+                    "pick": "05",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589567708",
+                    "franchise": "0005",
+                    "round": "04",
+                    "player": "14815",
+                    "pick": "06",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589568499",
+                    "franchise": "0003",
+                    "round": "04",
+                    "player": "14936",
+                    "pick": "07",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589569609",
+                    "franchise": "0011",
+                    "round": "04",
+                    "player": "14873",
+                    "pick": "08",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589569609",
+                    "franchise": "0002",
+                    "round": "04",
+                    "player": "14875",
+                    "pick": "09",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589572066",
+                    "franchise": "0012",
+                    "round": "04",
+                    "player": "14876",
+                    "pick": "10",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589573299",
+                    "franchise": "0008",
+                    "round": "04",
+                    "player": "14939",
+                    "pick": "11",
+                    "comments": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "timestamp": "1589578955",
+                    "franchise": "0012",
+                    "round": "04",
+                    "player": "14845",
+                    "pick": "12",
+                    "comments": ""
+                }
+            ],
+            "static_url": "https://www54.myfantasyleague.com/fflnetdynamic2020/XXXXX_LEAGUE_draft_results.xml",
+            "round1DraftOrder": "0012,0008,0003,0002,0009,0011,0005,0006,0010,0004,0007,0006,"
+        }
+    },
+    "version": "1.0",
+    "encoding": "utf-8"
+}
