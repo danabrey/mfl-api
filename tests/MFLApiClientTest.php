@@ -94,5 +94,6 @@ class MFLApiClientTest extends TestCase
         $this->assertIsArray($players);
         $this->assertEquals('12360', $players[0]->id);
         $this->assertEquals('DE', $players[0]->position);
+        $this->assertEquals('FA', $players[2]->team);
     }
 }
