@@ -49,3 +49,13 @@ Please feel free to open an issue if you'd like to get involved.
 ### Running tests
 
 `./vendor/bin/phpunit`
+
+## Treeware
+
+This package is MIT licensed and you are free to use it in open or closed source projects. If it makes it to your production environment, I would very much appreciate it if you bought the world some trees.
+
+It’s now common knowledge that one of the best tools to tackle the climate crisis and keep our temperatures from rising above 1.5C is to [plant trees](https://www.bbc.co.uk/news/science-environment-48870920). If you contribute to my forest you’ll be creating employment for local families and restoring wildlife habitats.
+
+You can buy trees at [offset.earth/treeware](https://plant.treeware.earth/Astrotomic/php-open-graph)
+
+Read more about Treeware at [treeware.earth](https://treeware.earth)
