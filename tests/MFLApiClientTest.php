@@ -20,7 +20,7 @@ class MFLApiClientTest extends TestCase
 
     public function testLeague()
     {
-        $data = file_get_contents(__DIR__ . '/_data/league/1qb_without_apikey.json');
+        $data = file_get_contents(__DIR__.'/_data/league/1qb_without_apikey.json');
         $responses = [
             new MockResponse($data),
         ];
@@ -41,40 +41,39 @@ class MFLApiClientTest extends TestCase
 
     public function testUnauthorizedLeague()
     {
-        $data = file_get_contents(__DIR__ . '/_data/league/1qb_without_api_key_private.json');
+        $data = file_get_contents(__DIR__.'/_data/league/1qb_without_api_key_private.json');
         $responses = [
             new MockResponse($data),
         ];
         $client = new MockHttpClient($responses);
         $this->client->setHttpClient($client);
         $this->expectException(UnauthorizedException::class);
-        $league = $this->client->league( 'xxxxx');
+        $league = $this->client->league('xxxxx');
     }
 
     public function testRosters()
     {
-        $data = file_get_contents(__DIR__ . '/_data/rosters/rosters.json');
+        $data = file_get_contents(__DIR__.'/_data/rosters/rosters.json');
         $responses = [
             new MockResponse($data),
         ];
         $client = new MockHttpClient($responses);
         $this->client->setHttpClient($client);
-        $rosters = $this->client->rosters( 'xxxxx');
+        $rosters = $this->client->rosters('xxxxx');
         $this->assertIsArray($rosters);
         $this->assertEquals('0001', $rosters[0]->id);
         $this->assertEquals('13132', $rosters[0]->players[0]->id);
     }
 
-
     public function testRostersWithContracts()
     {
-        $data = file_get_contents(__DIR__ . '/_data/rosters/rosters-with-contracts.json');
+        $data = file_get_contents(__DIR__.'/_data/rosters/rosters-with-contracts.json');
         $responses = [
             new MockResponse($data),
         ];
         $client = new MockHttpClient($responses);
         $this->client->setHttpClient($client);
-        $rosters = $this->client->rosters( 'xxxxx');
+        $rosters = $this->client->rosters('xxxxx');
         $this->assertIsArray($rosters);
         $this->assertEquals('0001', $rosters[0]->id);
         $this->assertEquals('13128', $rosters[0]->players[0]->id);
@@ -85,7 +84,7 @@ class MFLApiClientTest extends TestCase
 
     public function testPlayers()
     {
-        $data = file_get_contents(__DIR__ . '/_data/players/players.json');
+        $data = file_get_contents(__DIR__.'/_data/players/players.json');
         $responses = [
             new MockResponse($data),
         ];
@@ -100,7 +99,7 @@ class MFLApiClientTest extends TestCase
 
     public function testDraftResults()
     {
-        $data = file_get_contents(__DIR__ . '/_data/draftResults/draftResults.json');
+        $data = file_get_contents(__DIR__.'/_data/draftResults/draftResults.json');
         $responses = [
             new MockResponse($data),
         ];

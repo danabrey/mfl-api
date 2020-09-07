@@ -1,4 +1,5 @@
 <?php
+
 namespace DanAbrey\MFLApi\Models;
 
 final class MFLPlayer

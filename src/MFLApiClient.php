@@ -40,7 +40,7 @@ final class MFLApiClient
         $options = $userAgent ? [
             'headers' => [
                 'User-Agent' => $userAgent,
-            ]
+            ],
         ] : [];
 
         $this->httpClient = HttpClient::create($options);
@@ -49,18 +49,17 @@ final class MFLApiClient
     protected function getApiBase(): string
     {
         return sprintf(
-            "https://api.myfantasyleague.com/%s/export",
+            'https://api.myfantasyleague.com/%s/export',
             $this->year,
         );
     }
 
     protected function getArgumentsForUrl(array $arguments = []): string
     {
-
         $arguments = [
-                'JSON' => '1',
-                'APIKEY' => $this->apiKey,
-            ] + $arguments;
+            'JSON'   => '1',
+            'APIKEY' => $this->apiKey,
+        ] + $arguments;
 
         return http_build_query($arguments);
     }
@@ -78,7 +77,7 @@ final class MFLApiClient
     protected function getUrl(array $arguments = []): string
     {
         return sprintf(
-            "%s?%s",
+            '%s?%s',
             $this->getApiBase(),
             $this->getArgumentsForUrl($arguments),
         );
@@ -91,7 +90,7 @@ final class MFLApiClient
             $decodedResponse = json_decode($response->getContent(), true);
 
             if (isset($decodedResponse['error'])) {
-                if ($decodedResponse['error'] === "An error has occurred - probably caused by one or more invalid parameters.") {
+                if ($decodedResponse['error'] === 'An error has occurred - probably caused by one or more invalid parameters.') {
                     throw new InvalidParametersException();
                 }
 
@@ -111,35 +110,39 @@ final class MFLApiClient
 
     /**
      * @param string $leagueId
-     * @return MFLLeague
+     *
      * @throws InvalidParametersException
      * @throws UnauthorizedException
      * @throws UnknownApiError
+     *
+     * @return MFLLeague
      */
     public function league(string $leagueId): MFLLeague
     {
         $arguments = [
             'TYPE' => 'league',
-            'L' => $leagueId,
+            'L'    => $leagueId,
         ];
 
         $response = $this->makeRequest('GET', $this->getUrl($arguments));
 
         $normalizers = [new ArrayDenormalizer(), new MFLLeagueDenormalizer()];
         $serializer = new Serializer($normalizers);
+
         return $serializer->denormalize($response['league'], MFLLeague::class);
     }
 
     /**
-     * @return array|MFLPlayer[]
      * @throws InvalidParametersException
      * @throws UnauthorizedException
      * @throws UnknownApiError
+     *
+     * @return array|MFLPlayer[]
      */
     public function players(): array
     {
         $arguments = [
-            'TYPE' => 'players',
+            'TYPE'    => 'players',
             'DETAILS' => '1',
         ];
 
@@ -147,40 +150,45 @@ final class MFLApiClient
 
         $normalizers = [new ArrayDenormalizer(), new ObjectNormalizer()];
         $serializer = new Serializer($normalizers);
-        return $serializer->denormalize($response['players']['player'], MFLPlayer::class . '[]');
+
+        return $serializer->denormalize($response['players']['player'], MFLPlayer::class.'[]');
     }
 
     /**
      * @param string $leagueId
-     * @return array|MFLRoster[]
+     *
      * @throws InvalidParametersException
      * @throws UnauthorizedException
      * @throws UnknownApiError
+     *
+     * @return array|MFLRoster[]
      */
     public function rosters(string $leagueId): array
     {
         $arguments = [
             'TYPE' => 'rosters',
-            'L' => $leagueId,
+            'L'    => $leagueId,
         ];
 
         $response = $this->makeRequest('GET', $this->getUrl($arguments));
 
         $normalizers = [new ArrayDenormalizer(), new MFLRosterDenormalizer()];
         $serializer = new Serializer($normalizers);
-        return $serializer->denormalize($response['rosters']['franchise'], MFLRoster::class . '[]');
+
+        return $serializer->denormalize($response['rosters']['franchise'], MFLRoster::class.'[]');
     }
 
     public function draftResults(string $leagueId): array
     {
         $arguments = [
             'TYPE' => 'draftResults',
-            'L' => $leagueId
+            'L'    => $leagueId,
         ];
 
         $response = $this->makeRequest('GET', $this->getUrl($arguments));
         $normalizers = [new ArrayDenormalizer(), new MFLDraftPickDenormalizer()];
         $serializer = new Serializer($normalizers);
-        return $serializer->denormalize($response['draftResults']['draftUnit']['draftPick'], MFLDraftPick::class . '[]');
+
+        return $serializer->denormalize($response['draftResults']['draftUnit']['draftPick'], MFLDraftPick::class.'[]');
     }
 }

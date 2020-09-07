@@ -29,7 +29,7 @@ class MFLLeagueDenormalizer implements DenormalizerInterface
 
         $franchises = $franchiseDenormalizer->denormalize(
             $data['franchises']['franchise'],
-            MFLFranchise::class . "[]",
+            MFLFranchise::class.'[]',
             $format,
             $context
         );

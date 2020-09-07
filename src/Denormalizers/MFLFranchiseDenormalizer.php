@@ -3,11 +3,7 @@
 namespace DanAbrey\MFLApi\Denormalizers;
 
 use DanAbrey\MFLApi\Models\MFLFranchise;
-use DanAbrey\MFLApi\Models\MFLLeague;
-use Symfony\Component\Serializer\Normalizer\ArrayDenormalizer;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
-use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
-use Symfony\Component\Serializer\Serializer;
 
 class MFLFranchiseDenormalizer implements DenormalizerInterface
 {
