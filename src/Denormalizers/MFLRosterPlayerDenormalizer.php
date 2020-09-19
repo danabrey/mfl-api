@@ -13,7 +13,7 @@ class MFLRosterPlayerDenormalizer implements DenormalizerInterface
         $rosterPlayer->id = $data['id'];
         $rosterPlayer->status = $data['status'];
         if (isset($data['contractYear']) && $data['contractYear'] !== '') {
-            $rosterPlayer->contractYear = $data['contractYear'] ?: null;
+            $rosterPlayer->contractYear = (int)$data['contractYear'] ?: null;
         }
         if (isset($data['contractInfo'])) {
             $rosterPlayer->contractInfo = $data['contractInfo'] ?: null;
