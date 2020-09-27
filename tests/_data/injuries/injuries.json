@@ -1,0 +1,2338 @@
+{
+    "version": "1.0",
+    "injuries": {
+        "timestamp": "1601223725",
+        "week": "3",
+        "injury": [
+            {
+                "exp_return": "Dec 20, 2020",
+                "status": "IR",
+                "id": "10267",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Oct 5, 2020",
+                "status": "Out",
+                "id": "10271",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Questionable",
+                "id": "10315",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "IR",
+                "id": "10393",
+                "details": "Calf"
+            },
+            {
+                "exp_return": "Oct 12, 2020",
+                "status": "Out",
+                "id": "10413",
+                "details": "Chest"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "10722",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "10737",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "10749",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "IR",
+                "id": "10755",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "10766",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "10774",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "10778",
+                "details": "Neck"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "10782",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "10815",
+                "details": "Abdomen"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "10851",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "10932",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Suspended",
+                "id": "10960",
+                "details": "Suspension"
+            },
+            {
+                "exp_return": "Sep 28, 2020",
+                "status": "Questionable",
+                "id": "10981",
+                "details": "Abdomen"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "10985",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "11011",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Questionable",
+                "id": "11076",
+                "details": "Leg"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "11087",
+                "details": "Hip"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "11100",
+                "details": "Neck"
+            },
+            {
+                "exp_return": "Feb 1, 2021",
+                "status": "Out",
+                "id": "11104",
+                "details": "Shoulder"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "IR",
+                "id": "11192",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Questionable",
+                "id": "11199",
+                "details": "Shoulder"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "11213",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "11239",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "11262",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "11280",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "11286",
+                "details": "Thumb"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "IR-PUP",
+                "id": "11308",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "11312",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Questionable",
+                "id": "11327",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Doubtful",
+                "id": "11333",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "11351",
+                "details": "Pectoral"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "11460",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "11491",
+                "details": "Groin"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "11512",
+                "details": "Shoulder"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "11516",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "11537",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "11659",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Questionable",
+                "id": "11668",
+                "details": "Achilles"
+            },
+            {
+                "exp_return": "Sep 28, 2020",
+                "status": "Questionable",
+                "id": "11670",
+                "details": "Concussion"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "11672",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Doubtful",
+                "id": "11675",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Oct 1, 2020",
+                "status": "Questionable",
+                "id": "11677",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Suspended",
+                "id": "11688",
+                "details": "Suspension"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "11701",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "11705",
+                "details": "Calf"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "11711",
+                "details": "Back"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "11719",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "11720",
+                "details": "Pectoral"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "11728",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "11747",
+                "details": "Personal"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Suspended",
+                "id": "11758",
+                "details": "Personal"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "11760",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "11769",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "Suspended",
+                "id": "11788",
+                "details": "Suspension"
+            },
+            {
+                "exp_return": "Oct 5, 2020",
+                "status": "Out",
+                "id": "11814",
+                "details": "Elbow"
+            },
+            {
+                "exp_return": "Mar 1, 2021",
+                "status": "Out",
+                "id": "11850",
+                "details": "Neck"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "11862",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "11886",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "11890",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "11925",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "11964",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "Suspended",
+                "id": "12099",
+                "details": "Suspension"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "12141",
+                "details": "Pectoral"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "12152",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "12157",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Oct 1, 2020",
+                "status": "Out",
+                "id": "12184",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Oct 25, 2020",
+                "status": "IR",
+                "id": "12188",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Oct 1, 2020",
+                "status": "Out",
+                "id": "12197",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "12205",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Oct 19, 2020",
+                "status": "IR",
+                "id": "12206",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR-NFI",
+                "id": "12207",
+                "details": "Illness"
+            },
+            {
+                "exp_return": "Oct 25, 2020",
+                "status": "Holdout",
+                "id": "12215",
+                "details": "Personal"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "IR",
+                "id": "12221",
+                "details": "Neck"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "Suspended",
+                "id": "12227",
+                "details": "Suspension"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "12229",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Questionable",
+                "id": "12232",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Nov 15, 2020",
+                "status": "IR",
+                "id": "12248",
+                "details": "Pectoral"
+            },
+            {
+                "exp_return": "Oct 25, 2020",
+                "status": "IR",
+                "id": "12261",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "12268",
+                "details": "Groin"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "12271",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "RETIRED",
+                "id": "12298",
+                "details": "Illness"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "12317",
+                "details": "Achilles"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "12319",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "12326",
+                "details": "Knee - Meniscus"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "12378",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "12391",
+                "details": "Shoulder - Labrum"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "IR",
+                "id": "12417",
+                "details": "Hip"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "12429",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "12447",
+                "details": "Knee - MCL"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "12448",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "12479",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "12523",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "12586",
+                "details": "Leg"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "12596",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "12648",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "12652",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "12656",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "12657",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "12658",
+                "details": "Toe"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "12665",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "12685",
+                "details": "Upper Body"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR-NFI",
+                "id": "12690",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "IR-NFI",
+                "id": "12697",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "12699",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "Suspended",
+                "id": "12705",
+                "details": "Suspension"
+            },
+            {
+                "exp_return": "Nov 15, 2020",
+                "status": "Suspended",
+                "id": "12710",
+                "details": "Suspension"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "12715",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Suspended",
+                "id": "12720",
+                "details": "Suspension"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "12738",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "12739",
+                "details": "Groin"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Doubtful",
+                "id": "12762",
+                "details": "Groin"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Out",
+                "id": "12770",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "12771",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Sep 28, 2020",
+                "status": "Questionable",
+                "id": "12773",
+                "details": "Finger"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "12778",
+                "details": "Pectoral"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "12782",
+                "details": "Calf"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "12792",
+                "details": "Toe"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "IR-PUP",
+                "id": "12794",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "12815",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "IR",
+                "id": "12817",
+                "details": "Ribs"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "12822",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "12824",
+                "details": "Achilles"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "12826",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "12829",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "12835",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "12850",
+                "details": "Pectoral"
+            },
+            {
+                "exp_return": "Oct 19, 2020",
+                "status": "Questionable",
+                "id": "12871",
+                "details": "Quadriceps"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "IR",
+                "id": "12906",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Nov 8, 2020",
+                "status": "Questionable",
+                "id": "12921",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "12940",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "12950",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "12952",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Oct 1, 2020",
+                "status": "IR",
+                "id": "13026",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR-NFI",
+                "id": "13051",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13065",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "13072",
+                "details": "Spine"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13119",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "13130",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "13142",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13155",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "13165",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "IR",
+                "id": "13192",
+                "details": "Knee - MCL"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "13197",
+                "details": "Shoulder"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "13199",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Oct 5, 2020",
+                "status": "Out",
+                "id": "13205",
+                "details": "Groin"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR-PUP",
+                "id": "13206",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "13209",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "13215",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Questionable",
+                "id": "13217",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "13226",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "13228",
+                "details": "Achilles"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "13234",
+                "details": "Achilles"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "13238",
+                "details": "Lower Body"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "13248",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Oct 1, 2020",
+                "status": "Out",
+                "id": "13255",
+                "details": "Concussion"
+            },
+            {
+                "exp_return": "Nov 2, 2020",
+                "status": "IR-PUP",
+                "id": "13257",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "13258",
+                "details": "Calf"
+            },
+            {
+                "exp_return": "Oct 19, 2020",
+                "status": "IR",
+                "id": "13263",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13266",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "13272",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "13277",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Questionable",
+                "id": "13280",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Questionable",
+                "id": "13283",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "13284",
+                "details": "Groin"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "13285",
+                "details": "Achilles"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "13288",
+                "details": "Groin"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "IR-PUP",
+                "id": "13291",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13299",
+                "details": "Knee - MCL"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "13305",
+                "details": "Hip"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "13310",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13339",
+                "details": "Groin"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13351",
+                "details": "Quadriceps"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "13352",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "13360",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "13406",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13410",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 8, 2020",
+                "status": "IR",
+                "id": "13445",
+                "details": "Calf"
+            },
+            {
+                "exp_return": "Oct 5, 2020",
+                "status": "Questionable",
+                "id": "13536",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "13547",
+                "details": "Groin"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "13604",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "IR-PUP",
+                "id": "13608",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Doubtful",
+                "id": "13614",
+                "details": "Toe"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "13615",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Doubtful",
+                "id": "13620",
+                "details": "Quadriceps"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "13630",
+                "details": "Knee - ACL + MCL"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13633",
+                "details": "Groin"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "13637",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "13638",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Nov 8, 2020",
+                "status": "Suspended",
+                "id": "13640",
+                "details": "Suspension"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "13647",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13668",
+                "details": "Chest"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "13686",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "13688",
+                "details": "Elbow"
+            },
+            {
+                "exp_return": "Sep 28, 2020",
+                "status": "Questionable",
+                "id": "13701",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "13714",
+                "details": "Knee - Meniscus"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "13719",
+                "details": "Groin"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "13722",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "IR",
+                "id": "13724",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Oct 25, 2020",
+                "status": "IR",
+                "id": "13727",
+                "details": "Collarbone"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13731",
+                "details": "Neck"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "IR-PUP",
+                "id": "13735",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Oct 25, 2020",
+                "status": "IR",
+                "id": "13746",
+                "details": "Neck"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "13748",
+                "details": "Shoulder"
+            },
+            {
+                "exp_return": "Oct 5, 2020",
+                "status": "Out",
+                "id": "13751",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Out",
+                "id": "13757",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13773",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "IR-NFI",
+                "id": "13774",
+                "details": "Pectoral"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13776",
+                "details": "Shoulder"
+            },
+            {
+                "exp_return": "Oct 1, 2020",
+                "status": "Out",
+                "id": "13783",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "13784",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13786",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "13788",
+                "details": "Illness"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "13795",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Nov 8, 2020",
+                "status": "Questionable",
+                "id": "13804",
+                "details": "Abdomen"
+            },
+            {
+                "exp_return": "Oct 5, 2020",
+                "status": "Out",
+                "id": "13813",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13818",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13820",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "13826",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "IR-PUP",
+                "id": "13828",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "13833",
+                "details": "Knee - Meniscus"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "13838",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "13853",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "13866",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "13874",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "13882",
+                "details": "Shoulder"
+            },
+            {
+                "exp_return": "Oct 1, 2020",
+                "status": "IR",
+                "id": "13884",
+                "details": "Abdomen"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "13890",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13918",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Sep 28, 2020",
+                "status": "Questionable",
+                "id": "13920",
+                "details": "Hand"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "13927",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "13956",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "13965",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "13990",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "14012",
+                "details": "Leg"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "IR",
+                "id": "14027",
+                "details": "Thigh"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "14038",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "Out",
+                "id": "14057",
+                "details": "Shoulder"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14063",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "14075",
+                "details": "Finger"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14076",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14082",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "14088",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Sep 1, 2021",
+                "status": "RETIRED",
+                "id": "14092",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "COVID-IR",
+                "id": "14093",
+                "details": "Illness"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "14096",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14103",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14104",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "14110",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "14112",
+                "details": "Knee - MCL"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR-NFI",
+                "id": "14114",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR-NFI",
+                "id": "14115",
+                "details": "Achilles"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "14116",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "14119",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "14130",
+                "details": "Shoulder"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "14134",
+                "details": "Abdomen"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "IR",
+                "id": "14136",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14143",
+                "details": "Concussion"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "14147",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "IR-PUP",
+                "id": "14150",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Oct 25, 2020",
+                "status": "IR",
+                "id": "14164",
+                "details": "Knee - PCL"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14177",
+                "details": "Shoulder"
+            },
+            {
+                "exp_return": "Feb 1, 2021",
+                "status": "Suspended",
+                "id": "14178",
+                "details": "Personal"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "IR",
+                "id": "14195",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "14197",
+                "details": "Groin"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14198",
+                "details": "Illness"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "14202",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "14209",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "IR",
+                "id": "14215",
+                "details": "Elbow"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "14221",
+                "details": "Abdomen"
+            },
+            {
+                "exp_return": "Oct 5, 2020",
+                "status": "Out",
+                "id": "14228",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "14229",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "14232",
+                "details": "Quadriceps"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "14233",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "IR",
+                "id": "14235",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14240",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "14243",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14247",
+                "details": "Quadriceps"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "IR",
+                "id": "14251",
+                "details": "Groin"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR-NFI",
+                "id": "14255",
+                "details": "Chest"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14258",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "Suspended",
+                "id": "14259",
+                "details": "Suspension"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14260",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "14267",
+                "details": "Groin"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14278",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14279",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14291",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 25, 2020",
+                "status": "IR-PUP",
+                "id": "14294",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "14296",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "14314",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Questionable",
+                "id": "14324",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "14373",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "14394",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR-NFI",
+                "id": "14400",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Nov 1, 2021",
+                "status": "Questionable",
+                "id": "14440",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Questionable",
+                "id": "14450",
+                "details": "Shoulder"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14467",
+                "details": "Quadriceps"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "14481",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "IR-PUP",
+                "id": "14509",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "IR",
+                "id": "14518",
+                "details": "Ankle"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "14555",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Oct 1, 2020",
+                "status": "IR",
+                "id": "14561",
+                "details": "Shoulder"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "14671",
+                "details": "Calf"
+            },
+            {
+                "exp_return": "Oct 12, 2020",
+                "status": "Suspended",
+                "id": "14702",
+                "details": "Suspension"
+            },
+            {
+                "exp_return": "Nov 8, 2020",
+                "status": "IR-NFI",
+                "id": "14716",
+                "details": "Illness"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "14720",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14728",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14781",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14793",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14798",
+                "details": "Toe"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14799",
+                "details": "Ribs"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "IR-NFI",
+                "id": "14817",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Questionable",
+                "id": "14833",
+                "details": "Ribs"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14834",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14839",
+                "details": "Thumb"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14843",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 11, 2020",
+                "status": "IR",
+                "id": "14846",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "14849",
+                "details": "Shoulder"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14857",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14859",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14868",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "14869",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "IR-NFI",
+                "id": "14871",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14874",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Sep 27, 2020",
+                "status": "Doubtful",
+                "id": "14876",
+                "details": "Shin"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14882",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14884",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 1, 2020",
+                "status": "IR",
+                "id": "14885",
+                "details": "Quadriceps"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14890",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14894",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Sep 28, 2020",
+                "status": "Questionable",
+                "id": "14900",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "14907",
+                "details": "Achilles"
+            },
+            {
+                "exp_return": "Nov 29, 2020",
+                "status": "IR",
+                "id": "14908",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Oct 1, 2020",
+                "status": "Out",
+                "id": "14911",
+                "details": "Groin"
+            },
+            {
+                "exp_return": "Oct 5, 2020",
+                "status": "COVID-IR",
+                "id": "14918",
+                "details": "Illness"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14922",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "IR-NFI",
+                "id": "14923",
+                "details": "Leg"
+            },
+            {
+                "exp_return": "Oct 25, 2020",
+                "status": "IR",
+                "id": "14925",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "IR-NFI",
+                "id": "14932",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14935",
+                "details": "Ribs"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "14938",
+                "details": "Toe"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14939",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14951",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "14953",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14955",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14957",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14962",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR-NFI",
+                "id": "14964",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "14968",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "14972",
+                "details": "Neck"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14973",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 5, 2020",
+                "status": "IR",
+                "id": "14976",
+                "details": "Knee - Meniscus"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "14977",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "14979",
+                "details": "Wrist"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "14992",
+                "details": "Upper Body"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "15000",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "15005",
+                "details": "Leg"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "15007",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "15009",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "15010",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "15012",
+                "details": "Achilles"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "15015",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "15020",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "15022",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR",
+                "id": "15038",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "IR-NFI",
+                "id": "15045",
+                "details": "Knee - ACL"
+            },
+            {
+                "exp_return": "Nov 8, 2020",
+                "status": "IR-NFI",
+                "id": "15047",
+                "details": "Foot"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "IR",
+                "id": "15059",
+                "details": "Undisclosed"
+            },
+            {
+                "exp_return": "Nov 1, 2020",
+                "status": "Questionable",
+                "id": "15066",
+                "details": "Leg"
+            },
+            {
+                "exp_return": "Oct 18, 2020",
+                "status": "IR",
+                "id": "15099",
+                "details": "Calf"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Questionable",
+                "id": "2842",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "7813",
+                "details": "Coach's Decision"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Questionable",
+                "id": "8712",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Oct 1, 2020",
+                "status": "Out",
+                "id": "9064",
+                "details": "Neck"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "9465",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Questionable",
+                "id": "9679",
+                "details": "Neck"
+            },
+            {
+                "exp_return": "Jul 15, 2021",
+                "status": "Out",
+                "id": "9819",
+                "details": "Quadriceps"
+            },
+            {
+                "exp_return": "Oct 25, 2020",
+                "status": "IR",
+                "id": "9866",
+                "details": "Sports Hernia"
+            },
+            {
+                "exp_return": "Oct 4, 2020",
+                "status": "Out",
+                "id": "9868",
+                "details": "Shoulder"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Questionable",
+                "id": "9884",
+                "details": "Hamstring"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Questionable",
+                "id": "9912",
+                "details": "Knee"
+            },
+            {
+                "exp_return": "Apr 1, 2021",
+                "status": "Holdout",
+                "id": "9940",
+                "details": "Opt Out"
+            },
+            {
+                "exp_return": "Jul 22, 2021",
+                "status": "Questionable",
+                "id": "9966",
+                "details": "Neck"
+            },
+            {
+                "exp_return": "Nov 8, 2020",
+                "status": "Suspended",
+                "id": "9988",
+                "details": "Suspension"
+            }
+        ]
+    },
+    "encoding": "utf-8"
+}

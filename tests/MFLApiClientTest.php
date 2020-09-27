@@ -4,6 +4,7 @@ use DanAbrey\MFLApi\Exceptions\UnauthorizedException;
 use DanAbrey\MFLApi\MFLApiClient;
 use DanAbrey\MFLApi\Models\MFLDraftPick;
 use DanAbrey\MFLApi\Models\MFLLeague;
+use DanAbrey\MFLApi\Models\MFLPlayerInjuryReport;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;
@@ -108,5 +109,18 @@ class MFLApiClientTest extends TestCase
         $draftResults = $this->client->draftResults('12345');
         $this->assertIsArray($draftResults);
         $this->assertInstanceOf(MFLDraftPick::class, $draftResults[0]);
+    }
+
+    public function testInjuries()
+    {
+        $data = file_get_contents(__DIR__.'/_data/injuries/injuries.json');
+        $responses = [
+            new MockResponse($data),
+        ];
+        $client = new MockHttpClient($responses);
+        $this->client->setHttpClient($client);
+        $injuries = $this->client->injuries();
+        $this->assertIsArray($injuries);
+        $this->assertInstanceOf(MFLPlayerInjuryReport::class, $injuries[0]);
     }
 }

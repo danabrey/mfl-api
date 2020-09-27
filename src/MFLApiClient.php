@@ -11,6 +11,7 @@ use DanAbrey\MFLApi\Exceptions\UnknownApiError;
 use DanAbrey\MFLApi\Models\MFLDraftPick;
 use DanAbrey\MFLApi\Models\MFLLeague;
 use DanAbrey\MFLApi\Models\MFLPlayer;
+use DanAbrey\MFLApi\Models\MFLPlayerInjuryReport;
 use DanAbrey\MFLApi\Models\MFLRoster;
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Component\Serializer\Normalizer\ArrayDenormalizer;
@@ -190,5 +191,18 @@ final class MFLApiClient
         $serializer = new Serializer($normalizers);
 
         return $serializer->denormalize($response['draftResults']['draftUnit']['draftPick'], MFLDraftPick::class.'[]');
+    }
+
+    public function injuries(): array
+    {
+        $arguments = [
+            'TYPE' => 'injuries',
+        ];
+
+        $response = $this->makeRequest('GET', $this->getUrl($arguments));
+        $normalizers = [new ArrayDenormalizer(), new ObjectNormalizer()];
+        $serializer = new Serializer($normalizers);
+
+        return $serializer->denormalize($response['injuries']['injury'], MFLPlayerInjuryReport::class.'[]');
     }
 }
