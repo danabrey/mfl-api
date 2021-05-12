@@ -8,4 +8,5 @@ final class MFLPlayer
     public string $name;
     public ?string $position = null;
     public ?string $team = null;
+    public ?string $birthdate = null;
 }
