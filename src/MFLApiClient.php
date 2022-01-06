@@ -22,7 +22,7 @@ use Symfony\Contracts\HttpClient\Exception\ServerExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
-final class MFLApiClient
+class MFLApiClient
 {
     private HttpClientInterface $httpClient;
     private string $year;
