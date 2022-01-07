@@ -3,12 +3,14 @@
 namespace DanAbrey\MFLApi;
 
 use DanAbrey\MFLApi\Denormalizers\MFLDraftPickDenormalizer;
+use DanAbrey\MFLApi\Denormalizers\MFLFranchiseAssetsDenormalizer;
 use DanAbrey\MFLApi\Denormalizers\MFLLeagueDenormalizer;
 use DanAbrey\MFLApi\Denormalizers\MFLRosterDenormalizer;
 use DanAbrey\MFLApi\Exceptions\InvalidParametersException;
 use DanAbrey\MFLApi\Exceptions\UnauthorizedException;
 use DanAbrey\MFLApi\Exceptions\UnknownApiError;
 use DanAbrey\MFLApi\Models\MFLDraftPick;
+use DanAbrey\MFLApi\Models\MFLFranchiseAssets;
 use DanAbrey\MFLApi\Models\MFLLeague;
 use DanAbrey\MFLApi\Models\MFLPlayer;
 use DanAbrey\MFLApi\Models\MFLPlayerInjuryReport;
@@ -96,7 +98,11 @@ final class MFLApiClient
                 }
 
                 if (is_array($decodedResponse['error']) && str_contains($decodedResponse['error']['$t'], 'API requires logged in user')) {
-                    throw new UnauthorizedException();
+                    throw new UnauthorizedException('API requires logged in user');
+                }
+
+                if (is_array($decodedResponse['error']) && str_contains($decodedResponse['error']['$t'], 'Invalid league ID')) {
+                    throw new InvalidParametersException('Invalid league ID');
                 }
             }
         } catch (ClientExceptionInterface $e) {
@@ -204,5 +210,20 @@ final class MFLApiClient
         $serializer = new Serializer($normalizers);
 
         return $serializer->denormalize($response['injuries']['injury'], MFLPlayerInjuryReport::class.'[]');
+    }
+
+    public function assets(string $leagueId): array
+    {
+        $arguments = [
+            'TYPE' => 'assets',
+            'L'    => $leagueId,
+        ];
+
+        $response = $this->makeRequest('GET', $this->getUrl($arguments));
+
+        $normalizers = [new ArrayDenormalizer(), new MFLFranchiseAssetsDenormalizer()];
+        $serializer = new Serializer($normalizers);
+
+        return $serializer->denormalize($response['assets']['franchise'], MFLFranchiseAssets::class.'[]');
     }
 }

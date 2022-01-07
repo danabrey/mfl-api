@@ -1,0 +1,122 @@
+{
+  "assets": {
+    "franchise": [
+      {
+        "futureYearDraftPicks": {
+          "draftPick": [
+            {
+              "pick": "FP_0002_2022_1",
+              "description": "Year 2022 Round 1 Draft Pick from Team B"
+            },
+            {
+              "pick": "FP_0001_2022_2",
+              "description": "Year 2022 Round 2 Draft Pick from Team A"
+            },
+            {
+              "pick": "FP_0002_2022_3",
+              "description": "Year 2022 Round 3 Draft Pick from Team B"
+            },
+            {
+              "pick": "FP_0001_2023_1",
+              "description": "Year 2023 Round 1 Draft Pick from Team A"
+            },
+            {
+              "pick": "FP_0001_2023_2",
+              "description": "Year 2023 Round 2 Draft Pick from Team A"
+            },
+            {
+              "pick": "FP_0001_2023_3",
+              "description": "Year 2023 Round 3 Draft Pick from Team A"
+            }
+          ]
+        },
+        "currentYearDraftPicks": {
+          "draftPick": [
+            {
+              "pick": "DP_0_1",
+              "description": "Year 2021 Draft Pick 1.02"
+            },
+            {
+              "pick": "DP_1_1",
+              "description": "Year 2021 Draft Pick 2.02"
+            },
+            {
+              "pick": "DP_2_1",
+              "description": "Year 2021 Draft Pick 3.02"
+            }
+          ]
+        },
+        "players": {
+          "player": [
+            {
+              "id": "10001"
+            },
+            {
+              "id": "10002"
+            }
+          ]
+        },
+        "id": "0001"
+      },
+      {
+        "futureYearDraftPicks": {
+          "draftPick": [
+            {
+              "pick": "FP_0001_2022_1",
+              "description": "Year 2022 Round 1 Draft Pick from Team A"
+            },
+            {
+              "pick": "FP_0002_2022_2",
+              "description": "Year 2022 Round 2 Draft Pick from Team B"
+            },
+            {
+              "pick": "FP_0001_2022_3",
+              "description": "Year 2022 Round 3 Draft Pick from Team A"
+            },
+            {
+              "pick": "FP_0002_2023_1",
+              "description": "Year 2023 Round 1 Draft Pick from Team B"
+            },
+            {
+              "pick": "FP_0002_2023_2",
+              "description": "Year 2023 Round 2 Draft Pick from Team B"
+            },
+            {
+              "pick": "FP_0002_2023_3",
+              "description": "Year 2023 Round 3 Draft Pick from Team B"
+            }
+          ]
+        },
+        "currentYearDraftPicks": {
+          "draftPick": [
+            {
+              "pick": "DP_0_0",
+              "description": "Year 2021 Draft Pick 1.01"
+            },
+            {
+              "pick": "DP_1_0",
+              "description": "Year 2021 Draft Pick 2.01"
+            },
+            {
+              "pick": "DP_2_0",
+              "description": "Year 2021 Draft Pick 3.01"
+            }
+          ]
+        },
+        "players": {
+          "player": [
+            {
+              "id": "10003"
+            },
+            {
+              "id": "10004"
+            }
+          ]
+        },
+        "id": "0001"
+      }
+    ]
+  },
+  "version": "1.0",
+  "encoding": "utf-8"
+}

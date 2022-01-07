@@ -124,4 +124,19 @@ class MFLApiClientTest extends TestCase
         $this->assertIsArray($injuries);
         $this->assertInstanceOf(MFLPlayerInjuryReport::class, $injuries[0]);
     }
+
+    public function testAssets()
+    {
+        $data = file_get_contents(__DIR__.'/_data/assets/assets.json');
+        $responses = [
+            new MockResponse($data),
+        ];
+        $client = new MockHttpClient($responses);
+        $this->client->setHttpClient($client);
+        $assets = $this->client->assets('xxxxx');
+        $this->assertIsArray($assets);
+        $this->assertEquals('0001', $assets[0]->id);
+        $this->assertEquals('FP_0002_2022_1', $assets[0]->futureYearDraftPicks[0]->pick);
+        $this->assertEquals('DP_0_1', $assets[0]->currentYearDraftPicks[0]->pick);
+    }
 }
