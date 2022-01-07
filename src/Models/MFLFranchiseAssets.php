@@ -8,13 +8,13 @@ final class MFLFranchiseAssets
     /**
      * @var array|MFLFranchiseAssetDraftPick[]
      */
-    public array $futureYearDraftPicks;
+    public array $futureYearDraftPicks = [];
     /**
      * @var array|MFLFranchiseAssetDraftPick[]
      */
-    public array $currentYearDraftPicks;
+    public array $currentYearDraftPicks = [];
     /**
      * @var array|MFLFranchiseAssetPlayer[]
      */
-    public array $players;
+    public array $players = [];
 }
