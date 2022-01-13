@@ -6,6 +6,7 @@ use DanAbrey\MFLApi\Denormalizers\MFLDraftPickDenormalizer;
 use DanAbrey\MFLApi\Denormalizers\MFLFranchiseAssetsDenormalizer;
 use DanAbrey\MFLApi\Denormalizers\MFLLeagueDenormalizer;
 use DanAbrey\MFLApi\Denormalizers\MFLRosterDenormalizer;
+use DanAbrey\MFLApi\Denormalizers\MFLTradesDenormalizer;
 use DanAbrey\MFLApi\Exceptions\InvalidParametersException;
 use DanAbrey\MFLApi\Exceptions\UnauthorizedException;
 use DanAbrey\MFLApi\Exceptions\UnknownApiError;
@@ -15,6 +16,7 @@ use DanAbrey\MFLApi\Models\MFLLeague;
 use DanAbrey\MFLApi\Models\MFLPlayer;
 use DanAbrey\MFLApi\Models\MFLPlayerInjuryReport;
 use DanAbrey\MFLApi\Models\MFLRoster;
+use DanAbrey\MFLApi\Models\MFLTrade;
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Component\Serializer\Normalizer\ArrayDenormalizer;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
@@ -196,7 +198,9 @@ class MFLApiClient
         $normalizers = [new ArrayDenormalizer(), new MFLDraftPickDenormalizer()];
         $serializer = new Serializer($normalizers);
 
-        return $serializer->denormalize($response['draftResults']['draftUnit']['draftPick'], MFLDraftPick::class.'[]');
+        $picks = isset($response['draftResults']['draftUnit']['draftPick']['franchise']) ? [$response['draftResults']['draftUnit']['draftPick']] : $response['draftResults']['draftUnit']['draftPick'];
+
+        return $serializer->denormalize($picks, MFLDraftPick::class.'[]');
     }
 
     public function injuries(): array
@@ -225,5 +229,23 @@ class MFLApiClient
         $serializer = new Serializer($normalizers);
 
         return $serializer->denormalize($response['assets']['franchise'], MFLFranchiseAssets::class.'[]');
+    }
+
+    public function trades(string $leagueId): array
+    {
+        $arguments = [
+            'TYPE' => 'transactions',
+            'TRANS_TYPE' => 'TRADE',
+            'L'    => $leagueId,
+        ];
+
+        $response = $this->makeRequest('GET', $this->getUrl($arguments));
+
+        $normalizers = [new ArrayDenormalizer(), new ObjectNormalizer()];
+        $serializer = new Serializer($normalizers);
+
+        $trades = isset($response['transactions']['transaction']['franchise']) ? [$response['transactions']['transaction']] : $response['transactions']['transaction'];
+
+        return $serializer->denormalize($trades, MFLTrade::class.'[]');
     }
 }

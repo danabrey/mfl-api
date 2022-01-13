@@ -1,0 +1,20 @@
+{
+  "draftResults": {
+    "draftUnit": {
+      "unit": "LEAGUE",
+      "draftType": "SDRAFT",
+      "draftPick": {
+        "timestamp": "1589386248",
+        "franchise": "0012",
+        "round": "01",
+        "player": "14803",
+        "pick": "01",
+        "comments": ""
+      },
+      "static_url": "https://www54.myfantasyleague.com/fflnetdynamic2020/XXXXX_LEAGUE_draft_results.xml",
+      "round1DraftOrder": "0012,0008,0003,0002,0009,0011,0005,0006,0010,0004,0007,0006,"
+    }
+  },
+  "version": "1.0",
+  "encoding": "utf-8"
+}

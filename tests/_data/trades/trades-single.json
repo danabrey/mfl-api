@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "transactions": {
+    "transaction": {
+      "franchise2": "0003",
+      "franchise2_gave_up": "FP_0008_2022_3,FP_0003_2023_4,",
+      "timestamp": "1638196218",
+      "franchise": "0008",
+      "franchise1_gave_up": "13418,",
+      "type": "TRADE",
+      "expires": "1638799200"
+    }
+  },
+  "encoding": "utf-8"
+}

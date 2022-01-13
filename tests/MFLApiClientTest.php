@@ -112,6 +112,19 @@ class MFLApiClientTest extends TestCase
         $this->assertInstanceOf(MFLDraftPick::class, $draftResults[0]);
     }
 
+    public function testDraftResultsSingle()
+    {
+        $data = file_get_contents(__DIR__.'/_data/draftResults/draftResults-single.json');
+        $responses = [
+            new MockResponse($data),
+        ];
+        $client = new MockHttpClient($responses);
+        $this->client->setHttpClient($client);
+        $draftResults = $this->client->draftResults('12345');
+        $this->assertIsArray($draftResults);
+        $this->assertInstanceOf(MFLDraftPick::class, $draftResults[0]);
+    }
+
     public function testInjuries()
     {
         $data = file_get_contents(__DIR__.'/_data/injuries/injuries.json');
@@ -138,5 +151,45 @@ class MFLApiClientTest extends TestCase
         $this->assertEquals('0001', $assets[0]->id);
         $this->assertEquals('FP_0002_2022_1', $assets[0]->futureYearDraftPicks[0]->pick);
         $this->assertEquals('DP_0_1', $assets[0]->currentYearDraftPicks[0]->pick);
+    }
+
+    public function testTrades()
+    {
+        $data = file_get_contents(__DIR__.'/_data/trades/trades.json');
+        $responses = [
+            new MockResponse($data),
+        ];
+        $client = new MockHttpClient($responses);
+        $this->client->setHttpClient($client);
+        $trades = $this->client->trades('xxxxx');
+        $this->assertIsArray($trades);
+        $this->assertEquals('0003', $trades[2]->franchise2);
+        $this->assertEquals('FP_0008_2022_3,FP_0003_2023_4,', $trades[2]->franchise2_gave_up);
+        $this->assertEquals('1638196218', $trades[2]->timestamp);
+        $this->assertEquals('0008', $trades[2]->franchise);
+        $this->assertEquals('13418,', $trades[2]->franchise1_gave_up);
+        $this->assertEquals('1638196218', $trades[2]->timestamp);
+        $this->assertEquals('TRADE', $trades[2]->type);
+        $this->assertEquals('1638799200', $trades[2]->expires);
+    }
+
+    public function testTradeSingle()
+    {
+        $data = file_get_contents(__DIR__.'/_data/trades/trades-single.json');
+        $responses = [
+            new MockResponse($data),
+        ];
+        $client = new MockHttpClient($responses);
+        $this->client->setHttpClient($client);
+        $trades = $this->client->trades('xxxxx');
+        $this->assertIsArray($trades);
+        $this->assertEquals('0003', $trades[0]->franchise2);
+        $this->assertEquals('FP_0008_2022_3,FP_0003_2023_4,', $trades[0]->franchise2_gave_up);
+        $this->assertEquals('1638196218', $trades[0]->timestamp);
+        $this->assertEquals('0008', $trades[0]->franchise);
+        $this->assertEquals('13418,', $trades[0]->franchise1_gave_up);
+        $this->assertEquals('1638196218', $trades[0]->timestamp);
+        $this->assertEquals('TRADE', $trades[0]->type);
+        $this->assertEquals('1638799200', $trades[0]->expires);
     }
 }
