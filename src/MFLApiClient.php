@@ -4,6 +4,7 @@ namespace DanAbrey\MFLApi;
 
 use DanAbrey\MFLApi\Denormalizers\MFLDraftPickDenormalizer;
 use DanAbrey\MFLApi\Denormalizers\MFLFranchiseAssetsDenormalizer;
+use DanAbrey\MFLApi\Denormalizers\MFLFutureDraftPicksDenormalizer;
 use DanAbrey\MFLApi\Denormalizers\MFLLeagueDenormalizer;
 use DanAbrey\MFLApi\Denormalizers\MFLRosterDenormalizer;
 use DanAbrey\MFLApi\Denormalizers\MFLTradesDenormalizer;
@@ -12,6 +13,7 @@ use DanAbrey\MFLApi\Exceptions\UnauthorizedException;
 use DanAbrey\MFLApi\Exceptions\UnknownApiError;
 use DanAbrey\MFLApi\Models\MFLDraftPick;
 use DanAbrey\MFLApi\Models\MFLFranchiseAssets;
+use DanAbrey\MFLApi\Models\MFLFutureDraftPickFranchise;
 use DanAbrey\MFLApi\Models\MFLLeague;
 use DanAbrey\MFLApi\Models\MFLPlayer;
 use DanAbrey\MFLApi\Models\MFLPlayerInjuryReport;
@@ -247,5 +249,20 @@ class MFLApiClient
         $trades = isset($response['transactions']['transaction']['franchise']) ? [$response['transactions']['transaction']] : $response['transactions']['transaction'];
 
         return $serializer->denormalize($trades, MFLTrade::class.'[]');
+    }
+
+    public function futureDraftPicks(string $leagueId): array
+    {
+        $arguments = [
+            'TYPE' => 'futureDraftPicks',
+            'L'    => $leagueId,
+        ];
+
+        $response = $this->makeRequest('GET', $this->getUrl($arguments));
+
+        $normalizers = [new ArrayDenormalizer(), new MFLFutureDraftPicksDenormalizer()];
+        $serializer = new Serializer($normalizers);
+
+        return $serializer->denormalize($response['futureDraftPicks']['franchise'], MFLFutureDraftPickFranchise::class.'[]');
     }
 }

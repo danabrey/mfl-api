@@ -192,4 +192,38 @@ class MFLApiClientTest extends TestCase
         $this->assertEquals('TRADE', $trades[0]->type);
         $this->assertEquals('1638799200', $trades[0]->expires);
     }
+
+    public function testFutureDraftPicks()
+    {
+        $data = file_get_contents(__DIR__.'/_data/futureDraftPicks/futureDraftPicks.json');
+        $responses = [
+            new MockResponse($data),
+        ];
+        $client = new MockHttpClient($responses);
+        $this->client->setHttpClient($client);
+        $franchises = $this->client->futureDraftPicks('xxxxx');
+        $this->assertIsArray($franchises);
+        $this->assertEquals('0001', $franchises[0]->id);
+        $this->assertIsArray( $franchises[0]->picks);
+        $this->assertEquals(1, $franchises[0]->picks[0]->round);
+        $this->assertEquals('0001', $franchises[0]->picks[0]->originalPickFor);
+        $this->assertEquals(2022, $franchises[0]->picks[0]->year);
+    }
+
+    public function testFutureDraftPicksSingle()
+    {
+        $data = file_get_contents(__DIR__.'/_data/futureDraftPicks/futureDraftPicks-single.json');
+        $responses = [
+            new MockResponse($data),
+        ];
+        $client = new MockHttpClient($responses);
+        $this->client->setHttpClient($client);
+        $franchises = $this->client->futureDraftPicks('xxxxx');
+        $this->assertIsArray($franchises);
+        $this->assertEquals('0001', $franchises[0]->id);
+        $this->assertIsArray( $franchises[0]->picks);
+        $this->assertEquals(1, $franchises[0]->picks[0]->round);
+        $this->assertEquals('0001', $franchises[0]->picks[0]->originalPickFor);
+        $this->assertEquals(2022, $franchises[0]->picks[0]->year);
+    }
 }

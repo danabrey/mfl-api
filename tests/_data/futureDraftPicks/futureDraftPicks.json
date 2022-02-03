@@ -1,0 +1,778 @@
+{
+  "version": "1.0",
+  "futureDraftPicks": {
+    "franchise": [
+      {
+        "futureDraftPick": [
+          {
+            "round": "1",
+            "originalPickFor": "0001",
+            "year": "2022"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0001",
+            "year": "2022"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0001",
+            "year": "2022"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0001",
+            "year": "2022"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0001",
+            "year": "2022"
+          },
+          {
+            "round": "1",
+            "originalPickFor": "0001",
+            "year": "2023"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0001",
+            "year": "2023"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0001",
+            "year": "2023"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0001",
+            "year": "2023"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0001",
+            "year": "2023"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0010",
+            "year": "2022"
+          }
+        ],
+        "id": "0001"
+      },
+      {
+        "futureDraftPick": [
+          {
+            "round": "1",
+            "originalPickFor": "0002",
+            "year": "2022"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0002",
+            "year": "2022"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0002",
+            "year": "2022"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0002",
+            "year": "2022"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0002",
+            "year": "2022"
+          },
+          {
+            "round": "1",
+            "originalPickFor": "0002",
+            "year": "2023"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0002",
+            "year": "2023"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0002",
+            "year": "2023"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0002",
+            "year": "2023"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0002",
+            "year": "2023"
+          }
+        ],
+        "id": "0002"
+      },
+      {
+        "futureDraftPick": [
+          {
+            "round": "1",
+            "originalPickFor": "0003",
+            "year": "2022"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0003",
+            "year": "2022"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0003",
+            "year": "2022"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0003",
+            "year": "2022"
+          },
+          {
+            "round": "1",
+            "originalPickFor": "0003",
+            "year": "2023"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0003",
+            "year": "2023"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0003",
+            "year": "2023"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0003",
+            "year": "2023"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0003",
+            "year": "2023"
+          }
+        ],
+        "id": "0003"
+      },
+      {
+        "futureDraftPick": [
+          {
+            "round": "1",
+            "originalPickFor": "0004",
+            "year": "2022"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0004",
+            "year": "2022"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0004",
+            "year": "2022"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0004",
+            "year": "2022"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0004",
+            "year": "2022"
+          },
+          {
+            "round": "1",
+            "originalPickFor": "0004",
+            "year": "2023"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0004",
+            "year": "2023"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0004",
+            "year": "2023"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0004",
+            "year": "2023"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0004",
+            "year": "2023"
+          }
+        ],
+        "id": "0004"
+      },
+      {
+        "futureDraftPick": [
+          {
+            "round": "1",
+            "originalPickFor": "0005",
+            "year": "2022"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0005",
+            "year": "2022"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0005",
+            "year": "2022"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0005",
+            "year": "2022"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0005",
+            "year": "2022"
+          },
+          {
+            "round": "1",
+            "originalPickFor": "0005",
+            "year": "2023"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0005",
+            "year": "2023"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0005",
+            "year": "2023"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0005",
+            "year": "2023"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0005",
+            "year": "2023"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0003",
+            "year": "2022"
+          }
+        ],
+        "id": "0005"
+      },
+      {
+        "futureDraftPick": [
+          {
+            "round": "1",
+            "originalPickFor": "0006",
+            "year": "2022"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0006",
+            "year": "2022"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0006",
+            "year": "2022"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0006",
+            "year": "2022"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0006",
+            "year": "2022"
+          },
+          {
+            "round": "1",
+            "originalPickFor": "0006",
+            "year": "2023"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0006",
+            "year": "2023"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0006",
+            "year": "2023"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0006",
+            "year": "2023"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0006",
+            "year": "2023"
+          }
+        ],
+        "id": "0006"
+      },
+      {
+        "futureDraftPick": [
+          {
+            "round": "1",
+            "originalPickFor": "0007",
+            "year": "2022"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0007",
+            "year": "2022"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0007",
+            "year": "2022"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0007",
+            "year": "2022"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0007",
+            "year": "2022"
+          },
+          {
+            "round": "1",
+            "originalPickFor": "0007",
+            "year": "2023"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0007",
+            "year": "2023"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0007",
+            "year": "2023"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0007",
+            "year": "2023"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0007",
+            "year": "2023"
+          }
+        ],
+        "id": "0007"
+      },
+      {
+        "futureDraftPick": [
+          {
+            "round": "1",
+            "originalPickFor": "0008",
+            "year": "2022"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0008",
+            "year": "2022"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0008",
+            "year": "2022"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0008",
+            "year": "2022"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0008",
+            "year": "2022"
+          },
+          {
+            "round": "1",
+            "originalPickFor": "0008",
+            "year": "2023"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0008",
+            "year": "2023"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0008",
+            "year": "2023"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0008",
+            "year": "2023"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0008",
+            "year": "2023"
+          }
+        ],
+        "id": "0008"
+      },
+      {
+        "futureDraftPick": [
+          {
+            "round": "1",
+            "originalPickFor": "0009",
+            "year": "2022"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0009",
+            "year": "2022"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0009",
+            "year": "2022"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0009",
+            "year": "2022"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0009",
+            "year": "2022"
+          },
+          {
+            "round": "1",
+            "originalPickFor": "0009",
+            "year": "2023"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0009",
+            "year": "2023"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0009",
+            "year": "2023"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0009",
+            "year": "2023"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0009",
+            "year": "2023"
+          }
+        ],
+        "id": "0009"
+      },
+      {
+        "futureDraftPick": [
+          {
+            "round": "1",
+            "originalPickFor": "0010",
+            "year": "2022"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0010",
+            "year": "2022"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0010",
+            "year": "2022"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0010",
+            "year": "2022"
+          },
+          {
+            "round": "1",
+            "originalPickFor": "0010",
+            "year": "2023"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0010",
+            "year": "2023"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0010",
+            "year": "2023"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0010",
+            "year": "2023"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0010",
+            "year": "2023"
+          }
+        ],
+        "id": "0010"
+      },
+      {
+        "futureDraftPick": [
+          {
+            "round": "1",
+            "originalPickFor": "0011",
+            "year": "2022"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0011",
+            "year": "2022"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0011",
+            "year": "2022"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0011",
+            "year": "2022"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0011",
+            "year": "2022"
+          },
+          {
+            "round": "1",
+            "originalPickFor": "0011",
+            "year": "2023"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0011",
+            "year": "2023"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0011",
+            "year": "2023"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0011",
+            "year": "2023"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0011",
+            "year": "2023"
+          }
+        ],
+        "id": "0011"
+      },
+      {
+        "futureDraftPick": [
+          {
+            "round": "1",
+            "originalPickFor": "0012",
+            "year": "2022"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0012",
+            "year": "2022"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0012",
+            "year": "2022"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0012",
+            "year": "2022"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0012",
+            "year": "2022"
+          },
+          {
+            "round": "1",
+            "originalPickFor": "0012",
+            "year": "2023"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0012",
+            "year": "2023"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0012",
+            "year": "2023"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0012",
+            "year": "2023"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0012",
+            "year": "2023"
+          }
+        ],
+        "id": "0012"
+      },
+      {
+        "futureDraftPick": [
+          {
+            "round": "1",
+            "originalPickFor": "0013",
+            "year": "2022"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0013",
+            "year": "2022"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0013",
+            "year": "2022"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0013",
+            "year": "2022"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0013",
+            "year": "2022"
+          },
+          {
+            "round": "1",
+            "originalPickFor": "0013",
+            "year": "2023"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0013",
+            "year": "2023"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0013",
+            "year": "2023"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0013",
+            "year": "2023"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0013",
+            "year": "2023"
+          }
+        ],
+        "id": "0013"
+      },
+      {
+        "futureDraftPick": [
+          {
+            "round": "1",
+            "originalPickFor": "0014",
+            "year": "2022"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0014",
+            "year": "2022"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0014",
+            "year": "2022"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0014",
+            "year": "2022"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0014",
+            "year": "2022"
+          },
+          {
+            "round": "1",
+            "originalPickFor": "0014",
+            "year": "2023"
+          },
+          {
+            "round": "2",
+            "originalPickFor": "0014",
+            "year": "2023"
+          },
+          {
+            "round": "3",
+            "originalPickFor": "0014",
+            "year": "2023"
+          },
+          {
+            "round": "4",
+            "originalPickFor": "0014",
+            "year": "2023"
+          },
+          {
+            "round": "5",
+            "originalPickFor": "0014",
+            "year": "2023"
+          }
+        ],
+        "id": "0014"
+      }
+    ]
+  },
+  "encoding": "utf-8"
+}
