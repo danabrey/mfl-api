@@ -37,7 +37,7 @@ class MFLApiClient
 
     private Serializer $serializer;
 
-    public function __construct(int $year, string $apiKey = null, string $userAgent = null, ?string $loginCookie = null, ?string $baseURL = 'https://api.myfantasyleague.com')
+    public function __construct(int $year, string $apiKey = null, string $userAgent = null, ?string $loginCookie = null, ?string $baseURL = null)
     {
         $this->year = $year;
         $this->apiKey = $apiKey;
@@ -59,7 +59,7 @@ class MFLApiClient
 
         $this->httpClient = HttpClient::create($options);
 
-        $this->baseURL = $baseURL;
+        $this->baseURL = $baseURL ?? 'https://api.myfantasyleague.com';
     }
 
     protected function getApiBase(): string
