@@ -24,6 +24,7 @@ class MFLLeagueDenormalizer implements DenormalizerInterface
             $league->salaryCapAmount = $data['salaryCapAmount'];
         }
         $league->starters = $data['starters'];
+        $league->baseURL = $data['baseURL'];
 
         $franchiseDenormalizer = new Serializer([new MFLFranchiseDenormalizer(), new ArrayDenormalizer()]);
 

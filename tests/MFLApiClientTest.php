@@ -38,6 +38,7 @@ class MFLApiClientTest extends TestCase
         $this->assertNull($league->salaryCapAmount);
         $this->assertCount(4, $league->starters['position']);
         $this->assertEquals(8, $league->starters['count']);
+        $this->assertEquals('https://www68.myfantasyleague.com', $league->baseURL);
     }
 
     public function testUnauthorizedLeague()

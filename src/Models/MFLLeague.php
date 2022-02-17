@@ -18,4 +18,6 @@ final class MFLLeague
     public ?string $salaryCapAmount = null;
 
     public array $starters;
+
+    public string $baseURL;
 }
