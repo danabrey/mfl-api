@@ -36,7 +36,7 @@ class MFLApiClient
 
     private Serializer $serializer;
 
-    public function __construct(int $year, string $apiKey = null, string $userAgent = null)
+    public function __construct(int $year, string $apiKey = null, string $userAgent = null, string $loginCookie = null)
     {
         $this->year = $year;
         $this->apiKey = $apiKey;
@@ -44,11 +44,17 @@ class MFLApiClient
         $normalizers = [new ArrayDenormalizer(), new ObjectNormalizer()];
         $this->serializer = new Serializer($normalizers);
 
-        $options = $userAgent ? [
-            'headers' => [
-                'User-Agent' => $userAgent,
-            ],
-        ] : [];
+        $options = [
+            'headers' => [],
+        ];
+
+        if ($userAgent) {
+            $options['headers']['User-Agent'] = $userAgent;
+        }
+
+        if ($loginCookie) {
+            $options['headers']['Cookie'] = 'MFL_USER_ID=' . $loginCookie;
+        }
 
         $this->httpClient = HttpClient::create($options);
     }
