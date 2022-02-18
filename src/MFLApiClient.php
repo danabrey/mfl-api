@@ -273,6 +273,10 @@ class MFLApiClient
         $normalizers = [new ArrayDenormalizer(), new MFLFutureDraftPicksDenormalizer()];
         $serializer = new Serializer($normalizers);
 
+        if (count($response['futureDraftPicks']) === 0) {
+            return [];
+        }
+
         return $serializer->denormalize($response['futureDraftPicks']['franchise'], MFLFutureDraftPickFranchise::class.'[]');
     }
 }
