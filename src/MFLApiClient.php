@@ -8,6 +8,7 @@ use DanAbrey\MFLApi\Denormalizers\MFLFutureDraftPicksDenormalizer;
 use DanAbrey\MFLApi\Denormalizers\MFLLeagueDenormalizer;
 use DanAbrey\MFLApi\Denormalizers\MFLRosterDenormalizer;
 use DanAbrey\MFLApi\Denormalizers\MFLTradesDenormalizer;
+use DanAbrey\MFLApi\Exceptions\InvalidLeagueIdException;
 use DanAbrey\MFLApi\Exceptions\InvalidParametersException;
 use DanAbrey\MFLApi\Exceptions\UnauthorizedException;
 use DanAbrey\MFLApi\Exceptions\UnknownApiError;
@@ -116,7 +117,7 @@ class MFLApiClient
                 }
 
                 if (is_array($decodedResponse['error']) && str_contains($decodedResponse['error']['$t'], 'Invalid league ID')) {
-                    throw new InvalidParametersException('Invalid league ID');
+                    throw new InvalidLeagueIdException();
                 }
             }
         } catch (ClientExceptionInterface $e) {
