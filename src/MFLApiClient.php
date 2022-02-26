@@ -116,7 +116,10 @@ class MFLApiClient
                     throw new UnauthorizedException('API requires logged in user');
                 }
 
-                if (is_array($decodedResponse['error']) && str_contains($decodedResponse['error']['$t'], 'Invalid league ID')) {
+                if (is_array($decodedResponse['error']) &&
+                    (str_contains($decodedResponse['error']['$t'], 'Invalid league ID')
+                    || str_contains($decodedResponse['error']['$t'], 'Missing League ID'))
+                ) {
                     throw new InvalidLeagueIdException();
                 }
             }
