@@ -8,7 +8,7 @@ use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
 
 class MFLFranchiseAssetDraftPickDenormalizer implements DenormalizerInterface
 {
-    public function denormalize($data, string $type, string $format = null, array $context = [])
+    public function denormalize(mixed $data, string $type, ?string $format = null, array $context = []): mixed
     {
         $pick = new MFLFranchiseAssetDraftPick();
         $pick->pick = $data['pick'];
@@ -17,8 +17,13 @@ class MFLFranchiseAssetDraftPickDenormalizer implements DenormalizerInterface
         return $pick;
     }
 
-    public function supportsDenormalization($data, string $type, string $format = null)
+    public function supportsDenormalization(mixed $data, string $type, ?string $format = null, array $context = []): bool
     {
         return $type === MFLFranchiseAssetDraftPick::class;
+    }
+
+    public function getSupportedTypes(?string $format): array
+    {
+        return [MFLFranchiseAssetDraftPick::class => true];
     }
 }

@@ -7,7 +7,7 @@ use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
 
 class MFLFranchiseDenormalizer implements DenormalizerInterface
 {
-    public function denormalize($data, string $type, string $format = null, array $context = [])
+    public function denormalize(mixed $data, string $type, ?string $format = null, array $context = []): mixed
     {
         $franchise = new MFLFranchise();
 
@@ -17,8 +17,13 @@ class MFLFranchiseDenormalizer implements DenormalizerInterface
         return $franchise;
     }
 
-    public function supportsDenormalization($data, string $type, string $format = null)
+    public function supportsDenormalization(mixed $data, string $type, ?string $format = null, array $context = []): bool
     {
         return $type === MFLFranchise::class;
+    }
+
+    public function getSupportedTypes(?string $format): array
+    {
+        return [MFLFranchise::class => true];
     }
 }

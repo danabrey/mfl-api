@@ -7,7 +7,7 @@ use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
 
 class MFLDraftPickDenormalizer implements DenormalizerInterface
 {
-    public function denormalize($data, string $type, string $format = null, array $context = [])
+    public function denormalize(mixed $data, string $type, ?string $format = null, array $context = []): mixed
     {
         $draftPick = new MFLDraftPick();
 
@@ -21,8 +21,14 @@ class MFLDraftPickDenormalizer implements DenormalizerInterface
         return $draftPick;
     }
 
-    public function supportsDenormalization($data, string $type, string $format = null)
+    public function supportsDenormalization(mixed $data, string $type, ?string $format = null, array $context = []): bool
     {
         return $type === MFLDraftPick::class;
+    }
+
+
+    public function getSupportedTypes(?string $format): array
+    {
+        return [MFLDraftPick::class => true];
     }
 }

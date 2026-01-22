@@ -10,7 +10,7 @@ use Symfony\Component\Serializer\Serializer;
 
 class MFLRosterDenormalizer implements DenormalizerInterface
 {
-    public function denormalize($data, string $type, string $format = null, array $context = [])
+    public function denormalize(mixed $data, string $type, ?string $format = null, array $context = []): mixed
     {
         $roster = new MFLRoster();
 
@@ -38,8 +38,13 @@ class MFLRosterDenormalizer implements DenormalizerInterface
         return $roster;
     }
 
-    public function supportsDenormalization($data, string $type, string $format = null)
+    public function supportsDenormalization(mixed $data, string $type, ?string $format = null, array $context = []): bool
     {
         return $type === MFLRoster::class;
+    }
+
+    public function getSupportedTypes(?string $format): array
+    {
+        return [MFLRoster::class => true];
     }
 }

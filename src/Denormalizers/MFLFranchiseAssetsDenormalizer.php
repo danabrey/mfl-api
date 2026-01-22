@@ -13,7 +13,7 @@ use Symfony\Component\Serializer\Serializer;
 
 class MFLFranchiseAssetsDenormalizer implements DenormalizerInterface
 {
-    public function denormalize($data, string $type, string $format = null, array $context = [])
+    public function denormalize(mixed $data, string $type, ?string $format = null, array $context = []): mixed
     {
         $franchiseAssets = new MFLFranchiseAssets();
 
@@ -80,8 +80,13 @@ class MFLFranchiseAssetsDenormalizer implements DenormalizerInterface
         return $franchiseAssets;
     }
 
-    public function supportsDenormalization($data, string $type, string $format = null)
+    public function supportsDenormalization(mixed $data, string $type, ?string $format = null, array $context = []): bool
     {
         return $type === MFLFranchiseAssets::class;
+    }
+
+    public function getSupportedTypes(?string $format): array
+    {
+        return [MFLFranchiseAssets::class => true];
     }
 }
